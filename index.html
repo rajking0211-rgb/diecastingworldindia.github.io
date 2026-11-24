@@ -1,0 +1,1377 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diecast World India </title>
+  <meta name="description" content="Diecast World India - Official store for Mini GT, Kaido House, Pop Race, Inno64, Hot Wheels Premium & RLC, and precision 1:64 / 1:43 / 1:18 scale models in Mumbai, India. Mint packaging guarantee.">
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Sticky Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <!-- Brand Logo & Identity -->
+      <a href="#" class="brand-badge">
+        <img src="assets/images/logo.png" alt="Diecast World India Official Logo" class="brand-logo-img">
+        <div class="brand-info-box">
+          <span class="brand-title-main">DIECAST</span>
+          <span class="brand-country-main"><span class="brand-world-text">WORLD</span> <span class="brand-india-text">INDIA</span></span>
+          <span class="brand-garage-sub">COLLECT • CONNECT • CELEBRATE</span>
+        </div>
+      </a>
+
+      <!-- Instant Live Search Bar -->
+      <div class="nav-search-bar">
+        <input type="text" id="navSearchInput" placeholder="Search Mini GT, R34, Kaido House, RLC... (Press '/' to focus)" autocomplete="off">
+        <button class="search-icon-btn" aria-label="Search"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button>
+      </div>
+
+      <!-- Action Buttons (Garage Hold, Cart) -->
+      <div class="nav-actions">
+        <!-- Collector Garage Hold Button -->
+        <button class="nav-pill-btn garage-nav-btn" onclick="openDrawer('garageDrawer')" title="View Collector Garage Hold" aria-label="Garage Hold">
+          <svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+          <span>Garage</span>
+          <span class="count-badge garage-badge-count" id="garageCountBadge">0</span>
+        </button>
+
+        <!-- Shopping Cart -->
+        <button class="nav-pill-btn cart-btn" onclick="openDrawer('cartDrawer')">
+          <svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg> <span>Cart</span>
+          <span class="count-badge" id="cartCountBadge">0</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Indian Tiranga Waved Aero Ribbon (Header) -->
+  <div class="tiranga-wave-strip tiranga-header">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 34" fill="none" preserveAspectRatio="none">
+  <!-- Dynamic Indian Tiranga Waved Aero Ribbon -->
+  <path d="M 0 0 L 1440 0 L 1440 10.00 L 1430.00 8.76 L 1420.00 7.57 L 1410.00 6.45 L 1400.00 5.45 L 1390.00 4.59 L 1380.00 3.90 L 1370.00 3.39 L 1360.00 3.07 L 1350.00 2.93 L 1340.00 2.97 L 1330.00 3.17 L 1320.00 3.50 L 1310.00 3.94 L 1300.00 4.47 L 1290.00 5.06 L 1280.00 5.67 L 1270.00 6.29 L 1260.00 6.90 L 1250.00 7.49 L 1240.00 8.05 L 1230.00 8.57 L 1220.00 9.07 L 1210.00 9.54 L 1200.00 10.00 L 1190.00 10.46 L 1180.00 10.93 L 1170.00 11.43 L 1160.00 11.95 L 1150.00 12.51 L 1140.00 13.10 L 1130.00 13.71 L 1120.00 14.33 L 1110.00 14.94 L 1100.00 15.53 L 1090.00 16.06 L 1080.00 16.50 L 1070.00 16.83 L 1060.00 17.03 L 1050.00 17.07 L 1040.00 16.93 L 1030.00 16.61 L 1020.00 16.10 L 1010.00 15.41 L 1000.00 14.55 L 990.00 13.55 L 980.00 12.43 L 970.00 11.24 L 960.00 10.00 L 950.00 8.76 L 940.00 7.57 L 930.00 6.45 L 920.00 5.45 L 910.00 4.59 L 900.00 3.90 L 890.00 3.39 L 880.00 3.07 L 870.00 2.93 L 860.00 2.97 L 850.00 3.17 L 840.00 3.50 L 830.00 3.94 L 820.00 4.47 L 810.00 5.06 L 800.00 5.67 L 790.00 6.29 L 780.00 6.90 L 770.00 7.49 L 760.00 8.05 L 750.00 8.57 L 740.00 9.07 L 730.00 9.54 L 720.00 10.00 L 710.00 10.46 L 700.00 10.93 L 690.00 11.43 L 680.00 11.95 L 670.00 12.51 L 660.00 13.10 L 650.00 13.71 L 640.00 14.33 L 630.00 14.94 L 620.00 15.53 L 610.00 16.06 L 600.00 16.50 L 590.00 16.83 L 580.00 17.03 L 570.00 17.07 L 560.00 16.93 L 550.00 16.61 L 540.00 16.10 L 530.00 15.41 L 520.00 14.55 L 510.00 13.55 L 500.00 12.43 L 490.00 11.24 L 480.00 10.00 L 470.00 8.76 L 460.00 7.57 L 450.00 6.45 L 440.00 5.45 L 430.00 4.59 L 420.00 3.90 L 410.00 3.39 L 400.00 3.07 L 390.00 2.93 L 380.00 2.97 L 370.00 3.17 L 360.00 3.50 L 350.00 3.94 L 340.00 4.47 L 330.00 5.06 L 320.00 5.67 L 310.00 6.29 L 300.00 6.90 L 290.00 7.49 L 280.00 8.05 L 270.00 8.57 L 260.00 9.07 L 250.00 9.54 L 240.00 10.00 L 230.00 10.46 L 220.00 10.93 L 210.00 11.43 L 200.00 11.95 L 190.00 12.51 L 180.00 13.10 L 170.00 13.71 L 160.00 14.33 L 150.00 14.94 L 140.00 15.53 L 130.00 16.06 L 120.00 16.50 L 110.00 16.83 L 100.00 17.03 L 90.00 17.07 L 80.00 16.93 L 70.00 16.61 L 60.00 16.10 L 50.00 15.41 L 40.00 14.55 L 30.00 13.55 L 20.00 12.43 L 10.00 11.24 L 0.00 10.00 Z" fill="#FF671F"/>
+  <path d="M 0 10.00 L 10.00 11.24 L 20.00 12.43 L 30.00 13.55 L 40.00 14.55 L 50.00 15.41 L 60.00 16.10 L 70.00 16.61 L 80.00 16.93 L 90.00 17.07 L 100.00 17.03 L 110.00 16.83 L 120.00 16.50 L 130.00 16.06 L 140.00 15.53 L 150.00 14.94 L 160.00 14.33 L 170.00 13.71 L 180.00 13.10 L 190.00 12.51 L 200.00 11.95 L 210.00 11.43 L 220.00 10.93 L 230.00 10.46 L 240.00 10.00 L 250.00 9.54 L 260.00 9.07 L 270.00 8.57 L 280.00 8.05 L 290.00 7.49 L 300.00 6.90 L 310.00 6.29 L 320.00 5.67 L 330.00 5.06 L 340.00 4.47 L 350.00 3.94 L 360.00 3.50 L 370.00 3.17 L 380.00 2.97 L 390.00 2.93 L 400.00 3.07 L 410.00 3.39 L 420.00 3.90 L 430.00 4.59 L 440.00 5.45 L 450.00 6.45 L 460.00 7.57 L 470.00 8.76 L 480.00 10.00 L 490.00 11.24 L 500.00 12.43 L 510.00 13.55 L 520.00 14.55 L 530.00 15.41 L 540.00 16.10 L 550.00 16.61 L 560.00 16.93 L 570.00 17.07 L 580.00 17.03 L 590.00 16.83 L 600.00 16.50 L 610.00 16.06 L 620.00 15.53 L 630.00 14.94 L 640.00 14.33 L 650.00 13.71 L 660.00 13.10 L 670.00 12.51 L 680.00 11.95 L 690.00 11.43 L 700.00 10.93 L 710.00 10.46 L 720.00 10.00 L 730.00 9.54 L 740.00 9.07 L 750.00 8.57 L 760.00 8.05 L 770.00 7.49 L 780.00 6.90 L 790.00 6.29 L 800.00 5.67 L 810.00 5.06 L 820.00 4.47 L 830.00 3.94 L 840.00 3.50 L 850.00 3.17 L 860.00 2.97 L 870.00 2.93 L 880.00 3.07 L 890.00 3.39 L 900.00 3.90 L 910.00 4.59 L 920.00 5.45 L 930.00 6.45 L 940.00 7.57 L 950.00 8.76 L 960.00 10.00 L 970.00 11.24 L 980.00 12.43 L 990.00 13.55 L 1000.00 14.55 L 1010.00 15.41 L 1020.00 16.10 L 1030.00 16.61 L 1040.00 16.93 L 1050.00 17.07 L 1060.00 17.03 L 1070.00 16.83 L 1080.00 16.50 L 1090.00 16.06 L 1100.00 15.53 L 1110.00 14.94 L 1120.00 14.33 L 1130.00 13.71 L 1140.00 13.10 L 1150.00 12.51 L 1160.00 11.95 L 1170.00 11.43 L 1180.00 10.93 L 1190.00 10.46 L 1200.00 10.00 L 1210.00 9.54 L 1220.00 9.07 L 1230.00 8.57 L 1240.00 8.05 L 1250.00 7.49 L 1260.00 6.90 L 1270.00 6.29 L 1280.00 5.67 L 1290.00 5.06 L 1300.00 4.47 L 1310.00 3.94 L 1320.00 3.50 L 1330.00 3.17 L 1340.00 2.97 L 1350.00 2.93 L 1360.00 3.07 L 1370.00 3.39 L 1380.00 3.90 L 1390.00 4.59 L 1400.00 5.45 L 1410.00 6.45 L 1420.00 7.57 L 1430.00 8.76 L 1440.00 10.00 L 1440 20.00 L 1430.00 18.76 L 1420.00 17.57 L 1410.00 16.45 L 1400.00 15.45 L 1390.00 14.59 L 1380.00 13.90 L 1370.00 13.39 L 1360.00 13.07 L 1350.00 12.93 L 1340.00 12.97 L 1330.00 13.17 L 1320.00 13.50 L 1310.00 13.94 L 1300.00 14.47 L 1290.00 15.06 L 1280.00 15.67 L 1270.00 16.29 L 1260.00 16.90 L 1250.00 17.49 L 1240.00 18.05 L 1230.00 18.57 L 1220.00 19.07 L 1210.00 19.54 L 1200.00 20.00 L 1190.00 20.46 L 1180.00 20.93 L 1170.00 21.43 L 1160.00 21.95 L 1150.00 22.51 L 1140.00 23.10 L 1130.00 23.71 L 1120.00 24.33 L 1110.00 24.94 L 1100.00 25.53 L 1090.00 26.06 L 1080.00 26.50 L 1070.00 26.83 L 1060.00 27.03 L 1050.00 27.07 L 1040.00 26.93 L 1030.00 26.61 L 1020.00 26.10 L 1010.00 25.41 L 1000.00 24.55 L 990.00 23.55 L 980.00 22.43 L 970.00 21.24 L 960.00 20.00 L 950.00 18.76 L 940.00 17.57 L 930.00 16.45 L 920.00 15.45 L 910.00 14.59 L 900.00 13.90 L 890.00 13.39 L 880.00 13.07 L 870.00 12.93 L 860.00 12.97 L 850.00 13.17 L 840.00 13.50 L 830.00 13.94 L 820.00 14.47 L 810.00 15.06 L 800.00 15.67 L 790.00 16.29 L 780.00 16.90 L 770.00 17.49 L 760.00 18.05 L 750.00 18.57 L 740.00 19.07 L 730.00 19.54 L 720.00 20.00 L 710.00 20.46 L 700.00 20.93 L 690.00 21.43 L 680.00 21.95 L 670.00 22.51 L 660.00 23.10 L 650.00 23.71 L 640.00 24.33 L 630.00 24.94 L 620.00 25.53 L 610.00 26.06 L 600.00 26.50 L 590.00 26.83 L 580.00 27.03 L 570.00 27.07 L 560.00 26.93 L 550.00 26.61 L 540.00 26.10 L 530.00 25.41 L 520.00 24.55 L 510.00 23.55 L 500.00 22.43 L 490.00 21.24 L 480.00 20.00 L 470.00 18.76 L 460.00 17.57 L 450.00 16.45 L 440.00 15.45 L 430.00 14.59 L 420.00 13.90 L 410.00 13.39 L 400.00 13.07 L 390.00 12.93 L 380.00 12.97 L 370.00 13.17 L 360.00 13.50 L 350.00 13.94 L 340.00 14.47 L 330.00 15.06 L 320.00 15.67 L 310.00 16.29 L 300.00 16.90 L 290.00 17.49 L 280.00 18.05 L 270.00 18.57 L 260.00 19.07 L 250.00 19.54 L 240.00 20.00 L 230.00 20.46 L 220.00 20.93 L 210.00 21.43 L 200.00 21.95 L 190.00 22.51 L 180.00 23.10 L 170.00 23.71 L 160.00 24.33 L 150.00 24.94 L 140.00 25.53 L 130.00 26.06 L 120.00 26.50 L 110.00 26.83 L 100.00 27.03 L 90.00 27.07 L 80.00 26.93 L 70.00 26.61 L 60.00 26.10 L 50.00 25.41 L 40.00 24.55 L 30.00 23.55 L 20.00 22.43 L 10.00 21.24 L 0.00 20.00 Z" fill="#FFFFFF" stroke="#e2e8f0" stroke-width="0.5"/>
+  <path d="M 0 20.00 L 10.00 21.24 L 20.00 22.43 L 30.00 23.55 L 40.00 24.55 L 50.00 25.41 L 60.00 26.10 L 70.00 26.61 L 80.00 26.93 L 90.00 27.07 L 100.00 27.03 L 110.00 26.83 L 120.00 26.50 L 130.00 26.06 L 140.00 25.53 L 150.00 24.94 L 160.00 24.33 L 170.00 23.71 L 180.00 23.10 L 190.00 22.51 L 200.00 21.95 L 210.00 21.43 L 220.00 20.93 L 230.00 20.46 L 240.00 20.00 L 250.00 19.54 L 260.00 19.07 L 270.00 18.57 L 280.00 18.05 L 290.00 17.49 L 300.00 16.90 L 310.00 16.29 L 320.00 15.67 L 330.00 15.06 L 340.00 14.47 L 350.00 13.94 L 360.00 13.50 L 370.00 13.17 L 380.00 12.97 L 390.00 12.93 L 400.00 13.07 L 410.00 13.39 L 420.00 13.90 L 430.00 14.59 L 440.00 15.45 L 450.00 16.45 L 460.00 17.57 L 470.00 18.76 L 480.00 20.00 L 490.00 21.24 L 500.00 22.43 L 510.00 23.55 L 520.00 24.55 L 530.00 25.41 L 540.00 26.10 L 550.00 26.61 L 560.00 26.93 L 570.00 27.07 L 580.00 27.03 L 590.00 26.83 L 600.00 26.50 L 610.00 26.06 L 620.00 25.53 L 630.00 24.94 L 640.00 24.33 L 650.00 23.71 L 660.00 23.10 L 670.00 22.51 L 680.00 21.95 L 690.00 21.43 L 700.00 20.93 L 710.00 20.46 L 720.00 20.00 L 730.00 19.54 L 740.00 19.07 L 750.00 18.57 L 760.00 18.05 L 770.00 17.49 L 780.00 16.90 L 790.00 16.29 L 800.00 15.67 L 810.00 15.06 L 820.00 14.47 L 830.00 13.94 L 840.00 13.50 L 850.00 13.17 L 860.00 12.97 L 870.00 12.93 L 880.00 13.07 L 890.00 13.39 L 900.00 13.90 L 910.00 14.59 L 920.00 15.45 L 930.00 16.45 L 940.00 17.57 L 950.00 18.76 L 960.00 20.00 L 970.00 21.24 L 980.00 22.43 L 990.00 23.55 L 1000.00 24.55 L 1010.00 25.41 L 1020.00 26.10 L 1030.00 26.61 L 1040.00 26.93 L 1050.00 27.07 L 1060.00 27.03 L 1070.00 26.83 L 1080.00 26.50 L 1090.00 26.06 L 1100.00 25.53 L 1110.00 24.94 L 1120.00 24.33 L 1130.00 23.71 L 1140.00 23.10 L 1150.00 22.51 L 1160.00 21.95 L 1170.00 21.43 L 1180.00 20.93 L 1190.00 20.46 L 1200.00 20.00 L 1210.00 19.54 L 1220.00 19.07 L 1230.00 18.57 L 1240.00 18.05 L 1250.00 17.49 L 1260.00 16.90 L 1270.00 16.29 L 1280.00 15.67 L 1290.00 15.06 L 1300.00 14.47 L 1310.00 13.94 L 1320.00 13.50 L 1330.00 13.17 L 1340.00 12.97 L 1350.00 12.93 L 1360.00 13.07 L 1370.00 13.39 L 1380.00 13.90 L 1390.00 14.59 L 1400.00 15.45 L 1410.00 16.45 L 1420.00 17.57 L 1430.00 18.76 L 1440.00 20.00 L 1440 31.00 L 1430.00 29.76 L 1420.00 28.57 L 1410.00 27.45 L 1400.00 26.45 L 1390.00 25.59 L 1380.00 24.90 L 1370.00 24.39 L 1360.00 24.07 L 1350.00 23.93 L 1340.00 23.97 L 1330.00 24.17 L 1320.00 24.50 L 1310.00 24.94 L 1300.00 25.47 L 1290.00 26.06 L 1280.00 26.67 L 1270.00 27.29 L 1260.00 27.90 L 1250.00 28.49 L 1240.00 29.05 L 1230.00 29.57 L 1220.00 30.07 L 1210.00 30.54 L 1200.00 31.00 L 1190.00 31.46 L 1180.00 31.93 L 1170.00 32.43 L 1160.00 32.95 L 1150.00 33.51 L 1140.00 34.10 L 1130.00 34.71 L 1120.00 35.33 L 1110.00 35.94 L 1100.00 36.53 L 1090.00 37.06 L 1080.00 37.50 L 1070.00 37.83 L 1060.00 38.03 L 1050.00 38.07 L 1040.00 37.93 L 1030.00 37.61 L 1020.00 37.10 L 1010.00 36.41 L 1000.00 35.55 L 990.00 34.55 L 980.00 33.43 L 970.00 32.24 L 960.00 31.00 L 950.00 29.76 L 940.00 28.57 L 930.00 27.45 L 920.00 26.45 L 910.00 25.59 L 900.00 24.90 L 890.00 24.39 L 880.00 24.07 L 870.00 23.93 L 860.00 23.97 L 850.00 24.17 L 840.00 24.50 L 830.00 24.94 L 820.00 25.47 L 810.00 26.06 L 800.00 26.67 L 790.00 27.29 L 780.00 27.90 L 770.00 28.49 L 760.00 29.05 L 750.00 29.57 L 740.00 30.07 L 730.00 30.54 L 720.00 31.00 L 710.00 31.46 L 700.00 31.93 L 690.00 32.43 L 680.00 32.95 L 670.00 33.51 L 660.00 34.10 L 650.00 34.71 L 640.00 35.33 L 630.00 35.94 L 620.00 36.53 L 610.00 37.06 L 600.00 37.50 L 590.00 37.83 L 580.00 38.03 L 570.00 38.07 L 560.00 37.93 L 550.00 37.61 L 540.00 37.10 L 530.00 36.41 L 520.00 35.55 L 510.00 34.55 L 500.00 33.43 L 490.00 32.24 L 480.00 31.00 L 470.00 29.76 L 460.00 28.57 L 450.00 27.45 L 440.00 26.45 L 430.00 25.59 L 420.00 24.90 L 410.00 24.39 L 400.00 24.07 L 390.00 23.93 L 380.00 23.97 L 370.00 24.17 L 360.00 24.50 L 350.00 24.94 L 340.00 25.47 L 330.00 26.06 L 320.00 26.67 L 310.00 27.29 L 300.00 27.90 L 290.00 28.49 L 280.00 29.05 L 270.00 29.57 L 260.00 30.07 L 250.00 30.54 L 240.00 31.00 L 230.00 31.46 L 220.00 31.93 L 210.00 32.43 L 200.00 32.95 L 190.00 33.51 L 180.00 34.10 L 170.00 34.71 L 160.00 35.33 L 150.00 35.94 L 140.00 36.53 L 130.00 37.06 L 120.00 37.50 L 110.00 37.83 L 100.00 38.03 L 90.00 38.07 L 80.00 37.93 L 70.00 37.61 L 60.00 37.10 L 50.00 36.41 L 40.00 35.55 L 30.00 34.55 L 20.00 33.43 L 10.00 32.24 L 0.00 31.00 Z" fill="#046A38"/>
+</svg>
+  </div>
+
+  <!-- Store Open Celebration Announcement (from Image 1 Poster) -->
+  <div class="store-ready-announcement">
+    <span class="store-ready-pill">We are UP AND READY!</span>
+    <span><strong>DIECAST WORLD INDIA STORE IS OPEN & READY TO SERVE YOU!</strong> • Mumbai Collector Hub</span>
+  </div>
+
+  <!-- CINEMATIC RACING CARS SHOWCASE GALLERY (Castly-inspired) -->
+  <section class="racing-showcase-gallery" id="racingShowcaseGallery">
+    <div class="showcase-viewport">
+      
+      <!-- Static Brand Lockup (Matches Logo Lines & Stays Fixed During 2s Image Rotation) -->
+      <div class="showcase-brand-overlay">
+        <div class="showcase-brand-badge">
+          OFFICIAL MOTORSPORT DIECAST GARAGE
+        </div>
+        <div class="showcase-brand-lockup">
+          <span class="showcase-brand-line1">DIECAST </span>
+          <span class="showcase-brand-line2">WORLD INDIA</span>
+          <span class="showcase-brand-line3">COLLECT • CONNECT • CELEBRATE</span>
+        </div>
+      </div>
+
+      <!-- 10 Racing Cars Image Slides (Only images rotate automatically every 2s) -->
+      <!-- Slide 0: Ferrari 499P Hypercar Le Mans -->
+      <div class="showcase-slide active" data-showcase-idx="0">
+        <img src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=max&w=1920&q=85" alt="Ferrari 499P Hypercar" class="showcase-bg-img">
+        <div class="showcase-gradient-overlay"></div>
+      </div>
+
+      <!-- Slide 1: Porsche 911 GT3 R Manthey Grello -->
+      <div class="showcase-slide" data-showcase-idx="1">
+        <img src="https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?auto=format&fit=max&w=1920&q=85" alt="Porsche 911 GT3 R Manthey Grello" class="showcase-bg-img">
+        <div class="showcase-gradient-overlay"></div>
+      </div>
+
+      <!-- Slide 2: Nissan Skyline GT-R R34 N1 Homologation -->
+      <div class="showcase-slide" data-showcase-idx="2">
+        <img src="https://images.unsplash.com/photo-1617788138017-80ad40651399?auto=format&fit=max&w=1920&q=85" alt="Nissan Skyline GT-R R34" class="showcase-bg-img">
+        <div class="showcase-gradient-overlay"></div>
+      </div>
+
+      <!-- Slide 3: McLaren 720S GT3 Motorsport -->
+      <div class="showcase-slide" data-showcase-idx="3">
+        <img src="https://images.unsplash.com/photo-1621135802920-133df287f89c?auto=format&fit=max&w=1920&q=85" alt="McLaren 720S GT3" class="showcase-bg-img">
+        <div class="showcase-gradient-overlay"></div>
+      </div>
+
+      <!-- Slide 4: Lamborghini Huracan Super Trofeo EVO -->
+      <div class="showcase-slide" data-showcase-idx="4">
+        <img src="https://images.unsplash.com/photo-1544829099-b9a0c07fad1a?auto=format&fit=max&w=1920&q=85" alt="Lamborghini Huracan Super Trofeo" class="showcase-bg-img">
+        <div class="showcase-gradient-overlay"></div>
+      </div>
+
+      <!-- Slide 5: Audi R8 LMS GT3 Ultra -->
+      <div class="showcase-slide" data-showcase-idx="5">
+        <img src="https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?auto=format&fit=max&w=1920&q=85" alt="Audi R8 LMS GT3" class="showcase-bg-img">
+        <div class="showcase-gradient-overlay"></div>
+      </div>
+
+      <!-- Slide 6: BMW M4 GT3 Track Competition -->
+      <div class="showcase-slide" data-showcase-idx="6">
+        <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=max&w=1920&q=85" alt="BMW M4 GT3" class="showcase-bg-img">
+        <div class="showcase-gradient-overlay"></div>
+      </div>
+
+      <!-- Slide 7: Mercedes-AMG GT3 Black Series -->
+      <div class="showcase-slide" data-showcase-idx="7">
+        <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=max&w=1920&q=85" alt="Mercedes-AMG GT3" class="showcase-bg-img">
+        <div class="showcase-gradient-overlay"></div>
+      </div>
+
+      <!-- Slide 8: Toyota GR Supra GT4 Motorsport -->
+      <div class="showcase-slide" data-showcase-idx="8">
+        <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=max&w=1920&q=85" alt="Toyota GR Supra GT4" class="showcase-bg-img">
+        <div class="showcase-gradient-overlay"></div>
+      </div>
+
+      <!-- Slide 9: Aston Martin Vantage GTE Le Mans -->
+      <div class="showcase-slide" data-showcase-idx="9">
+        <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=max&w=1920&q=85" alt="Aston Martin Vantage GTE" class="showcase-bg-img">
+        <div class="showcase-gradient-overlay"></div>
+      </div>
+
+      <!-- Nav Controls -->
+      <button class="showcase-nav-arrow showcase-arrow-prev" onclick="prevShowcaseSlide()" aria-label="Previous Slide"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg></button>
+      <button class="showcase-nav-arrow showcase-arrow-next" onclick="nextShowcaseSlide()" aria-label="Next Slide"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></button>
+
+      <!-- 10 Navigation Dots for 10 Racing Cars -->
+      <div class="showcase-nav-dots" id="showcaseNavDots">
+        <button class="showcase-dot active" onclick="jumpToShowcase(0)" aria-label="Slide 1"></button>
+        <button class="showcase-dot" onclick="jumpToShowcase(1)" aria-label="Slide 2"></button>
+        <button class="showcase-dot" onclick="jumpToShowcase(2)" aria-label="Slide 3"></button>
+        <button class="showcase-dot" onclick="jumpToShowcase(3)" aria-label="Slide 4"></button>
+        <button class="showcase-dot" onclick="jumpToShowcase(4)" aria-label="Slide 5"></button>
+        <button class="showcase-dot" onclick="jumpToShowcase(5)" aria-label="Slide 6"></button>
+        <button class="showcase-dot" onclick="jumpToShowcase(6)" aria-label="Slide 7"></button>
+        <button class="showcase-dot" onclick="jumpToShowcase(7)" aria-label="Slide 8"></button>
+        <button class="showcase-dot" onclick="jumpToShowcase(8)" aria-label="Slide 9"></button>
+        <button class="showcase-dot" onclick="jumpToShowcase(9)" aria-label="Slide 10"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CASTLY-INSPIRED RACING CARS HERO GALLERY & CAROUSEL -->
+  <section class="hero-gallery-section" id="heroSection">
+    <div class="hero-gallery-container">
+      
+      <!-- Top Gallery Header Tag -->
+      <div class="gallery-top-bar">
+        <div class="gallery-headline">
+          <div class="gallery-live-pulse">
+            <span>Featured Racing Garage</span>
+          </div>
+          <span style="font-size: 0.9rem; color: var(--text-muted); font-weight: 600;">Track Homologation, Le Mans, Nürburgring & JTCC Legends</span>
+        </div>
+        <!-- <div style="font-size: 0.8rem; color: var(--text-dim);">
+          <svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg> Click any car to preview specs & instant order
+        </div> -->
+      </div>
+
+      <!-- Main Slider Showcase Container -->
+      <div class="hero-slider-wrap" id="heroSliderWrap">
+        <!-- Floating Navigation Chevrons -->
+        <button class="hero-nav-arrow hero-arrow-prev" onclick="prevHeroSlide()" aria-label="Previous Car"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg></button>
+        <button class="hero-nav-arrow hero-arrow-next" onclick="nextHeroSlide()" aria-label="Next Car"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></button>
+
+        <div class="hero-slides-viewport">
+          
+          <!-- Slide 1: Nissan Skyline GT-R R34 V-Spec II N1 -->
+          <div class="hero-slide active" data-slide-index="0" data-car-id="DWI-001">
+            <div class="slide-text-col">
+              <div class="slide-badge-row">
+                <span class="slide-racing-tag"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg> JDM MOTORSPORT LEGEND</span>
+                <span class="slide-scale-badge">1:64 SCALE</span>
+                <span class="slide-scale-badge" style="color:#059669; font-weight:700;">IN STOCK</span>
+              </div>
+              <h2 class="slide-title">Mini GT #522 Nissan Skyline GT-R (R34) V-Spec II N1</h2>
+              <p class="slide-subtitle">Pure Homologation White • Nürburgring 24h & Super Taikyu DNA</p>
+              
+              <div class="slide-specs-chips">
+                <span class="slide-spec-chip"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><line x1="12" y1="2" x2="12" y2="8"/><line x1="12" y1="16" x2="12" y2="22"/><line x1="2" y1="12" x2="8" y2="12"/><line x1="16" y1="12" x2="22" y2="12"/></svg> Real Rider Slicks</span>
+                <span class="slide-spec-chip"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg> Diecast Heavy Base</span>
+                <span class="slide-spec-chip"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg> Factory N1 Aero</span>
+                <span class="slide-spec-chip"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg> Sealed Blister + Protector</span>
+              </div>
+
+              <div class="slide-price-row">
+                <span class="slide-current-price">₹1,499</span>
+                <span class="slide-original-price">₹1,699</span>
+                <span class="slide-save-pill">Save 12% OFF</span>
+              </div>
+
+              <div class="slide-actions-row">
+                <button class="slide-btn-cart" onclick="addToCart('DWI-001')">
+                  <svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg> Add to Cart
+                </button>
+                <button class="slide-btn-hold" onclick="addToGarageBag('DWI-001')">
+                  <svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg> Hold in Garage
+                </button>
+                <button class="slide-btn-quick" onclick="openQuickView('DWI-001')">
+                  <svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg> View Specs
+                </button>
+              </div>
+            </div>
+
+            <div class="slide-image-col">
+              <div class="hero-car-frame">
+                <span class="hero-grail-tag">GODZILLA RACING #522</span>
+                <img src="https://images.unsplash.com/photo-1617788138017-80ad40651399?auto=format&fit=max&w=1000&q=80" alt="Mini GT Nissan Skyline R34 N1" class="hero-car-img">
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2: Porsche 911 GT3 R #911 Manthey Racing 'Grello' -->
+          <div class="hero-slide" data-slide-index="1" data-car-id="DWI-006">
+            <div class="slide-text-col">
+              <div class="slide-badge-row">
+                <span class="slide-racing-tag" style="background: linear-gradient(135deg, #84cc16, #22c55e); color:#000;"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.45 1-1 1H7v4h10v-4h-2c-.55 0-1-.45-1-1v-2.34"/><path d="M18 4H6v7a6 6 0 0 0 12 0V4z"/></svg> 24H NÜRBURGRING WINNER</span>
+                <span class="slide-scale-badge">1:64 SCALE</span>
+                <span class="slide-scale-badge" style="color:#059669; font-weight:700;">IN STOCK</span>
+              </div>
+              <h2 class="slide-title">Tarmac Works - Porsche 911 GT3 R Manthey 'Grello' #911</h2>
+              <p class="slide-subtitle">Iconic Neon Green-Yellow Livery • Green Hell King</p>
+              
+              <div class="slide-specs-chips">
+                <span class="slide-spec-chip"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><line x1="12" y1="2" x2="12" y2="8"/><line x1="12" y1="16" x2="12" y2="22"/><line x1="2" y1="12" x2="8" y2="12"/><line x1="16" y1="12" x2="22" y2="12"/></svg> BBS Monoblock Slicks</span>
+                <span class="slide-spec-chip"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9C2.1 11.2 2 11.6 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></svg> High-Downforce GT Wing</span>
+                <span class="slide-spec-chip"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg> Manthey Licensed</span>
+                <span class="slide-spec-chip"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg> Window Box + Collector Card</span>
+              </div>
+
+              <div class="slide-price-row">
+                <span class="slide-current-price">₹1,799</span>
+                <span class="slide-original-price">₹1,999</span>
+                <span class="slide-save-pill">Save 10% OFF</span>
+              </div>
+
+              <div class="slide-actions-row">
+                <button class="slide-btn-cart" onclick="addToCart('DWI-006')"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg> Add to Cart</button>
+                <button class="slide-btn-hold" onclick="addToGarageBag('DWI-006')"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg> Hold in Garage</button>
+                <button class="slide-btn-quick" onclick="openQuickView('DWI-006')"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg> View Specs</button>
+              </div>
+            </div>
+
+            <div class="slide-image-col">
+              <div class="hero-car-frame">
+                <span class="hero-grail-tag">NÜRBURGRING HERO</span>
+                <img src="https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?auto=format&fit=max&w=1000&q=80" alt="Porsche 911 GT3 R Manthey Grello" class="hero-car-img">
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3: Kaido House x Mini GT Datsun 510 Pro Street OG Orange -->
+          <div class="hero-slide" data-slide-index="2" data-car-id="DWI-002">
+            <div class="slide-text-col">
+              <div class="slide-badge-row">
+                <span class="slide-racing-tag" style="background: linear-gradient(135deg, #f97316, #ea580c); color:#fff;"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 3z"/></svg> JUN IMAI CUSTOM PRO STREET</span>
+                <span class="slide-scale-badge">1:64 SCALE</span>
+                <span class="slide-scale-badge" style="color:#dc2626; font-weight:700;">HOT DROP</span>
+              </div>
+              <h2 class="slide-title">Kaido House x Mini GT #075 Datsun 510 Pro Street</h2>
+              <p class="slide-subtitle">Full Opening Hood with Detailed Twin-Carb Engine Bay</p>
+              
+              <div class="slide-specs-chips">
+                <span class="slide-spec-chip"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 9.9-1"/></svg> Opening Engine Hood</span>
+                <span class="slide-spec-chip"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><line x1="12" y1="2" x2="12" y2="8"/><line x1="12" y1="16" x2="12" y2="22"/><line x1="2" y1="12" x2="8" y2="12"/><line x1="16" y1="12" x2="22" y2="12"/></svg> Alloy Chrome Deep Rim</span>
+                <span class="slide-spec-chip"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg> Diecast Metal Chassis</span>
+                <span class="slide-spec-chip"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg> Magnetic Flip-Top Box</span>
+              </div>
+
+              <div class="slide-price-row">
+                <span class="slide-current-price">₹2,399</span>
+                <span class="slide-original-price">₹2,699</span>
+                <span class="slide-save-pill">Save 11% OFF</span>
+              </div>
+
+              <div class="slide-actions-row">
+                <button class="slide-btn-cart" onclick="addToCart('DWI-002')"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg> Add to Cart</button>
+                <button class="slide-btn-hold" onclick="addToGarageBag('DWI-002')"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg> Hold in Garage</button>
+                <button class="slide-btn-quick" onclick="openQuickView('DWI-002')"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg> View Specs</button>
+              </div>
+            </div>
+
+            <div class="slide-image-col">
+              <div class="hero-car-frame">
+                <span class="hero-grail-tag">KAIDO WORKS OG</span>
+                <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=max&w=1000&q=80" alt="Kaido House Datsun 510 OG Orange" class="hero-car-img">
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 4: Pop Race Pandem Toyota GR Yaris Advan Livery -->
+          <div class="hero-slide" data-slide-index="3" data-car-id="DWI-003">
+            <div class="slide-text-col">
+              <div class="slide-badge-row">
+                <span class="slide-racing-tag" style="background: linear-gradient(135deg, #ef4444, #000); color:#fff;"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg> WRC RALLY MONSTER</span>
+                <span class="slide-scale-badge">1:64 SCALE</span>
+                <span class="slide-scale-badge" style="color:#059669; font-weight:700;">DUAL OPENINGS</span>
+              </div>
+              <h2 class="slide-title">Pop Race - Pandem Toyota GR Yaris Advan Racing</h2>
+              <p class="slide-subtitle">Rocket Bunny Widebody • Opening Engine Hood & Rear Hatch</p>
+              
+              <div class="slide-specs-chips">
+                <span class="slide-spec-chip"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 9.9-1"/></svg> Dual Hood & Hatch</span>
+                <span class="slide-spec-chip"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><line x1="12" y1="2" x2="12" y2="8"/><line x1="12" y1="16" x2="12" y2="22"/><line x1="2" y1="12" x2="8" y2="12"/><line x1="16" y1="12" x2="22" y2="12"/></svg> Yokohama Advan Slicks</span>
+                <span class="slide-spec-chip"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg> Zinc Alloy Diecast</span>
+                <span class="slide-spec-chip"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg> Acrylic Case + Base</span>
+              </div>
+
+              <div class="slide-price-row">
+                <span class="slide-current-price">₹1,899</span>
+                <span class="slide-original-price">₹2,099</span>
+                <span class="slide-save-pill">Save 10% OFF</span>
+              </div>
+
+              <div class="slide-actions-row">
+                <button class="slide-btn-cart" onclick="addToCart('DWI-003')"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg> Add to Cart</button>
+                <button class="slide-btn-hold" onclick="addToGarageBag('DWI-003')"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg> Hold in Garage</button>
+                <button class="slide-btn-quick" onclick="openQuickView('DWI-003')"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg> View Specs</button>
+              </div>
+            </div>
+
+            <div class="slide-image-col">
+              <div class="hero-car-frame">
+                <span class="hero-grail-tag">ADVAN RACING SPEC</span>
+                <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=max&w=1000&q=80" alt="Pop Race Pandem GR Yaris Advan" class="hero-car-img">
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 5: Inno64 Honda Civic Ferio EG9 #15 Idemitsu Motion -->
+          <div class="hero-slide" data-slide-index="4" data-car-id="DWI-004">
+            <div class="slide-text-col">
+              <div class="slide-badge-row">
+                <span class="slide-racing-tag" style="background: linear-gradient(135deg, #3b82f6, #1d4ed8); color:#fff;"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.45 1-1 1H7v4h10v-4h-2c-.55 0-1-.45-1-1v-2.34"/><path d="M18 4H6v7a6 6 0 0 0 12 0V4z"/></svg> JTCC TOURING CAR CHAMPION</span>
+                <span class="slide-scale-badge">1:64 SCALE</span>
+                <span class="slide-scale-badge" style="color:#d97706; font-weight:700;">ACRYLIC CASE</span>
+              </div>
+              <h2 class="slide-title">Inno64 - Honda Civic Ferio EG9 #15 Idemitsu MAC Tools</h2>
+              <p class="slide-subtitle">Circuit Legend • Includes Extra Set of Gold Racing Wheels</p>
+              
+              <div class="slide-specs-chips">
+                <span class="slide-spec-chip"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><line x1="12" y1="2" x2="12" y2="8"/><line x1="12" y1="16" x2="12" y2="22"/><line x1="2" y1="12" x2="8" y2="12"/><line x1="16" y1="12" x2="22" y2="12"/></svg> Dual Wheel Sets Included</span>
+                <span class="slide-spec-chip"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.45 1-1 1H7v4h10v-4h-2c-.55 0-1-.45-1-1v-2.34"/><path d="M18 4H6v7a6 6 0 0 0 12 0V4z"/></svg> Screwed Metal Plaque</span>
+                <span class="slide-spec-chip"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg> Full Interior Roll Cage</span>
+                <span class="slide-spec-chip"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg> Collector Display Box</span>
+              </div>
+
+              <div class="slide-price-row">
+                <span class="slide-current-price">₹1,999</span>
+                <span class="slide-original-price">₹2,299</span>
+                <span class="slide-save-pill">Save 13% OFF</span>
+              </div>
+
+              <div class="slide-actions-row">
+                <button class="slide-btn-cart" onclick="addToCart('DWI-004')"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg> Add to Cart</button>
+                <button class="slide-btn-hold" onclick="addToGarageBag('DWI-004')"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg> Hold in Garage</button>
+                <button class="slide-btn-quick" onclick="openQuickView('DWI-004')"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg> View Specs</button>
+              </div>
+            </div>
+
+            <div class="slide-image-col">
+              <div class="hero-car-frame">
+                <span class="hero-grail-tag">JTCC SUZUKA WINNER</span>
+                <img src="https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?auto=format&fit=max&w=1000&q=80" alt="Inno64 Honda Civic Ferio EG9" class="hero-car-img">
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 6: Hot Wheels RLC Exclusive 1993 Mustang Cobra R -->
+          <div class="hero-slide" data-slide-index="5" data-car-id="DWI-005">
+            <div class="slide-text-col">
+              <div class="slide-badge-row">
+                <span class="slide-racing-tag" style="background: linear-gradient(135deg, #a855f7, #6b21a8); color:#fff;"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l4 6-10 12L2 9z"/><path d="M11 3L8 9l4 12 4-12-3-6"/><path d="M2 9h20"/></svg> RED LINE CLUB COLLECTOR GRAIL</span>
+                <span class="slide-scale-badge">1:64 SCALE</span>
+                <span class="slide-scale-badge" style="color:#dc2626; font-weight:700;">STRICT 1-PER-USER</span>
+              </div>
+              <h2 class="slide-title">Hot Wheels RLC Exclusive - 1993 Ford Mustang Cobra R</h2>
+              <p class="slide-subtitle">Mirror Spectraflame Vibrant Red • Opening 5.0L Engine Hood</p>
+              
+              <div class="slide-specs-chips">
+                <span class="slide-spec-chip"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 9.9-1"/></svg> Opening Hood with 5.0L</span>
+                <span class="slide-spec-chip"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><line x1="12" y1="2" x2="12" y2="8"/><line x1="12" y1="16" x2="12" y2="22"/><line x1="2" y1="12" x2="8" y2="12"/><line x1="16" y1="12" x2="22" y2="12"/></svg> Real Riders 5-Spoke Chrome</span>
+                <span class="slide-spec-chip"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg> Full Metal/Metal Body</span>
+                <span class="slide-spec-chip"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg> Kar Keepers Clamshell</span>
+              </div>
+
+              <div class="slide-price-row">
+                <span class="slide-current-price">₹3,499</span>
+                <span class="slide-original-price">₹3,999</span>
+                <span class="slide-save-pill">Save 13% OFF</span>
+              </div>
+
+              <div class="slide-actions-row">
+                <button class="slide-btn-cart" onclick="addToCart('DWI-005')"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg> Add to Cart</button>
+                <button class="slide-btn-hold" onclick="addToGarageBag('DWI-005')"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg> Hold in Garage</button>
+                <button class="slide-btn-quick" onclick="openQuickView('DWI-005')"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg> View Specs</button>
+              </div>
+            </div>
+
+            <div class="slide-image-col">
+              <div class="hero-car-frame">
+                <span class="hero-grail-tag">RLC LIMITED DROP</span>
+                <img src="https://images.unsplash.com/photo-1584345604476-8ec5e12e42dd?auto=format&fit=max&w=1000&q=80" alt="Hot Wheels RLC 1993 Mustang Cobra R" class="hero-car-img">
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Slider Dots Navigation -->
+        <div class="hero-slider-dots" id="heroSliderDots">
+          <button class="hero-dot active" onclick="jumpToHeroSlide(0)" aria-label="Slide 1"></button>
+          <button class="hero-dot" onclick="jumpToHeroSlide(1)" aria-label="Slide 2"></button>
+          <button class="hero-dot" onclick="jumpToHeroSlide(2)" aria-label="Slide 3"></button>
+          <button class="hero-dot" onclick="jumpToHeroSlide(3)" aria-label="Slide 4"></button>
+          <button class="hero-dot" onclick="jumpToHeroSlide(4)" aria-label="Slide 5"></button>
+          <button class="hero-dot" onclick="jumpToHeroSlide(5)" aria-label="Slide 6"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Brand Filter Strip -->
+  <section class="brand-filter-section reveal-fade-up">
+    <div class="section-head-row">
+      <div class="section-title-wrap">
+        <h3>Featured Collector Brands</h3>
+        <p>Curated lines from the world's most detailed scale model manufacturers</p>
+      </div>
+      <button class="filter-chip-btn" onclick="resetAllFilters()">Show All Brands</button>
+    </div>
+    <div class="brand-pills-row">
+      <button class="brand-btn active" data-brand="all" onclick="setBrandFilter('all')">All Brands</button>
+      <button class="brand-btn" data-brand="Mini GT" onclick="setBrandFilter('Mini GT')">Mini GT</button>
+      <button class="brand-btn" data-brand="Kaido House" onclick="setBrandFilter('Kaido House')">Kaido House</button>
+      <button class="brand-btn" data-brand="Pop Race" onclick="setBrandFilter('Pop Race')">Pop Race</button>
+      <button class="brand-btn" data-brand="Inno64" onclick="setBrandFilter('Inno64')">Inno64</button>
+      <button class="brand-btn" data-brand="Hot Wheels" onclick="setBrandFilter('Hot Wheels')">Hot Wheels RLC/Premium</button>
+      <button class="brand-btn" data-brand="Tarmac Works" onclick="setBrandFilter('Tarmac Works')">Tarmac Works</button>
+      <button class="brand-btn" data-brand="Almost Real" onclick="setBrandFilter('Almost Real')">Almost Real</button>
+      <button class="brand-btn" data-brand="Bburago" onclick="setBrandFilter('Bburago')">Bburago</button>
+      <button class="brand-btn" data-brand="Solido" onclick="setBrandFilter('Solido')">Solido 1:18</button>
+      <button class="brand-btn" data-brand="Accessories" onclick="setBrandFilter('Accessories')">Dioramas & Supplies</button>
+    </div>
+  </section>
+
+  <!-- Products Catalog Section -->
+  <section class="catalog-section reveal-fade-up" id="catalogSection">
+    <div class="catalog-header-bar">
+      <div class="catalog-filters-left">
+        <span id="catalogCount" style="font-weight:700; color:var(--gold-primary); font-size:0.95rem;">Loading collectibles...</span>
+        <div style="height:16px; width:1px; background:var(--border-color); margin:0 4px;"></div>
+        <button class="filter-chip-btn active" data-status="all" onclick="setStatusFilter('all')">All Status</button>
+        <button class="filter-chip-btn" data-status="in_stock" onclick="setStatusFilter('in_stock')">In Stock</button>
+        <button class="filter-chip-btn" data-status="pre_order" onclick="setStatusFilter('pre_order')"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Pre-Orders</button>
+        <button class="filter-chip-btn" data-status="hot_drop" onclick="setStatusFilter('hot_drop')"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 3z"/></svg> Limited Drops</button>
+      </div>
+
+      <div class="catalog-sort-right">
+        <label for="sortSelect" style="font-size:0.8rem; color:var(--text-muted);">Sort By:</label>
+        <select id="sortSelect" class="sort-select" onchange="setSortOption(this.value)">
+          <option value="featured">Featured Castings</option>
+          <option value="price-low">Price: Low to High</option>
+          <option value="price-high">Price: High to Low</option>
+          <option value="title">Alphabetical (A-Z)</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Products Grid (Rendered via app.js) -->
+    <div class="products-grid" id="productsGrid">
+      <!-- Populated dynamically -->
+    </div>
+  </section>
+
+  <!-- The Garage Bag Explainer Banner -->
+  <section class="garage-banner-section reveal-scale-up">
+    <div class="garage-banner-inner">
+      <div>
+        <span class="garage-badge">Exclusive Collector Feature</span>
+        <h2 style="font-size: 2.2rem; color: #fff; line-height: 1.15; margin-bottom: 14px;">
+          Never Miss a Drop. <br>
+          <span class="gold-text">Hold in Your Private Garage</span> for 45 Days.
+        </h2>
+        <p style="color: #cbd5e1; font-size: 0.95rem; line-height: 1.6; max-width: 600px;">
+          Diecast collectors know drops happen on random days — Mini GT on Monday, Kaido House on Friday, Inno64 next week. Instead of paying courier each time, click <strong>"Hold in Garage"</strong>. We safely hold your models in temperature-controlled storage at our Mumbai hub and ship them in one consolidated box when you say go!
+        </p>
+
+        <div class="garage-steps">
+          <div class="g-step">
+            <span>01</span>
+            <h5>Lock The Car</h5>
+            <p>Buy hyped drops before stock runs out</p>
+          </div>
+          <div class="g-step">
+            <span>02</span>
+            <h5>Accumulate</h5>
+            <p>Hold models for up to 45 days safely</p>
+          </div>
+          <div class="g-step">
+            <span>03</span>
+            <h5>Single Dispatch</h5>
+            <p>1 box, 1 courier fee, 5-layer armor packaging</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; background: rgba(10, 14, 23, 0.85); border: 1px solid var(--border-color); border-radius: 16px; padding: 30px;">
+        <div class="empty-state-icon" style="margin-bottom:12px;"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg></div>
+        <h3 style="color:#fff; margin-bottom: 6px;">Your Private Garage Bag</h3>
+        <p style="color:#cbd5e1; font-size:0.85rem; margin-bottom: 20px;">
+          Manage your held pieces anytime with one click.
+        </p>
+        <button class="btn-primary-gold" onclick="openDrawer('garageDrawer')">
+          Open My Garage Bag
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pre-Order & Drops Calendar -->
+  <section class="preorder-section reveal-fade-up" id="preorderSection">
+    <div class="section-head-row">
+      <div class="section-title-wrap">
+        <h3>Upcoming Drops & Pre-Order Calendar</h3>
+        <p>Book international releases before they land in India</p>
+      </div>
+      <button class="filter-chip-btn" style="border-color:var(--gold-primary); color:var(--gold-primary); font-weight:700;" onclick="showToast('Pre-order schedule updated with January & February batches!')">
+        <svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg> Verified Drop Schedule
+      </button>
+    </div>
+
+    <div class="preorder-table-card">
+      <table class="preorder-table">
+        <thead>
+          <tr>
+            <th>Scale Model & Brand</th>
+            <th>Scale</th>
+            <th>Expected MRP</th>
+            <th>Advance Token</th>
+            <th>Arrival Window</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="preorderTableBody">
+          <!-- Populated by app.js -->
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Instagram Live Showcase Section -->
+  <section class="instagram-section reveal-fade-up">
+    <div class="insta-container">
+      <div class="insta-header">
+        <div>
+          <h3>From Our Instagram Feed</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem;">
+            Follow <strong>@diecast_world_india</strong> for live unboxings, fresh batch arrivals, and community collector setups.
+          </p>
+        </div>
+        <a href="https://www.instagram.com/diecast_world_india?fqnt=aHRmdTl0azZ4NzJl" target="_blank" class="insta-handle-badge">
+          <span><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg> Follow @diecast_world_india</span>
+        </a>
+      </div>
+
+      <div class="insta-grid">
+        <div class="insta-card" onclick="openQuickView('DWI-001')">
+          <img src="https://images.unsplash.com/photo-1617788138017-80ad40651399?auto=format&fit=max&w=500&q=80" alt="Mini GT Nissan Skyline R34">
+          <div class="insta-overlay">
+            <span class="insta-caption">Mini GT R34 V-Spec II N1 Homologation</span>
+            <button class="insta-buy-btn">View Model</button>
+          </div>
+        </div>
+
+        <div class="insta-card" onclick="openQuickView('DWI-002')">
+          <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=max&w=500&q=80" alt="Kaido House Datsun 510">
+          <div class="insta-overlay">
+            <span class="insta-caption">Kaido House Jun Imai Pro Street 510</span>
+            <button class="insta-buy-btn">View Model</button>
+          </div>
+        </div>
+
+        <div class="insta-card" onclick="openQuickView('DWI-003')">
+          <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=max&w=500&q=80" alt="Pop Race GR Yaris">
+          <div class="insta-overlay">
+            <span class="insta-caption">Pop Race GR Yaris Advan Livery</span>
+            <button class="insta-buy-btn">View Model</button>
+          </div>
+        </div>
+
+        <div class="insta-card" onclick="openQuickView('DWI-004')">
+          <img src="https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?auto=format&fit=max&w=500&q=80" alt="Inno64 Civic Ferio">
+          <div class="insta-overlay">
+            <span class="insta-caption">Inno64 Idemitsu Civic Ferio EG9 Suzuka</span>
+            <button class="insta-buy-btn">View Model</button>
+          </div>
+        </div>
+
+        <div class="insta-card" onclick="openQuickView('DWI-006')">
+          <img src="https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?auto=format&fit=max&w=500&q=80" alt="Tarmac Works Porsche Manthey">
+          <div class="insta-overlay">
+            <span class="insta-caption">Manthey Racing 911 GT3 R Grello</span>
+            <button class="insta-buy-btn">View Model</button>
+          </div>
+        </div>
+
+        <div class="insta-card" onclick="openQuickView('DWI-013')">
+          <img src="https://images.unsplash.com/photo-1506521781263-d8422e82f27a?auto=format&fit=max&w=500&q=80" alt="LED Underground Diorama">
+          <div class="insta-overlay">
+            <span class="insta-caption">Tokyo Underground LED Diorama Hub</span>
+            <button class="insta-buy-btn">View Model</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Collector Pillars (Shifted after Instagram Section) -->
+  <section class="collector-pillars reveal-fade-up" id="collectorPillarsSection">
+    <div class="pillars-container">
+      <!-- Pillar 1: Wide Range of Diecast Models -->
+      <div class="pillar-card">
+        <div class="pillar-icon-box"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9C2.1 11.2 2 11.6 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></svg></div>
+        <div class="pillar-content">
+          <h4>Wide Range of Diecast Models</h4>
+          <p>Hand-curated 1:64, 1:43 & 1:18 international precision models from Mini GT, Kaido House, Pop Race, Inno64, Hot Wheels Premium & RLC.</p>
+          <span class="pillar-highlight">Official Licensed Casts</span>
+        </div>
+      </div>
+
+      <!-- Pillar 2: Authentic & Quality Assured -->
+      <div class="pillar-card">
+        <div class="pillar-icon-box"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg></div>
+        <div class="pillar-content">
+          <h4>Authentic & Quality Assured</h4>
+          <p>Direct from authorized international distributors. Backed by 5-Layer Mint Packaging Armor to ensure zero soft corners.</p>
+          <span class="pillar-highlight">Mint Blister Armor</span>
+        </div>
+      </div>
+
+      <!-- Pillar 3: For Collectors, By Collectors -->
+      <div class="pillar-card">
+        <div class="pillar-icon-box"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg></div>
+        <div class="pillar-content">
+          <h4>For Collectors, By Collectors</h4>
+          <p>Anti-scalper fair play pricing, token pre-orders, and our signature 45-day Collector Garage hold program to combine dispatches.</p>
+          <span class="pillar-highlight">Anti-Scalper Allocation</span>
+        </div>
+      </div>
+
+      <!-- Pillar 4: Connect. Share. Celebrate. -->
+      <div class="pillar-card">
+        <div class="pillar-icon-box"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <div class="pillar-content">
+          <h4>Connect. Share. Celebrate.</h4>
+          <p>Connecting passionate diecast collectors across India. Visit our Ghatkopar East hub or join our pan-India community.</p>
+          <span class="pillar-highlight">Pan-India Collector Hub</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Official Poster Slogan Banner (from Image 1 Poster) -->
+    <div class="poster-quote-banner">
+      <div class="poster-quote-inner">
+        <div class="poster-quote-left">
+          <span class="poster-slogan">DRIVEN BY PASSION • BUILT FOR COLLECTORS</span>
+          <p class="poster-subtext">Thank you for your love & support • This is just the beginning!</p>
+        </div>
+        <div class="poster-quote-right">
+          <span class="poster-cta-tag">LET'S DRIVE THIS JOURNEY TOGETHER!</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mumbai Hub & Official Visiting Card Section -->
+  <section class="hub-section reveal-fade-up">
+    <div class="hub-card-wrapper">
+      <div class="hub-info-col">
+        <span class="garage-badge" style="background: rgba(217, 119, 6, 0.12); color: var(--gold-primary); border-color: var(--gold-primary);">
+          Official Business Identity
+        </span>
+        <h2>
+          Mumbai Collector Hub & <br>
+          <span class="gold-text">Visiting Information</span>
+        </h2>
+        <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin-bottom: 28px;">
+          Operated by <strong>Deepa Shah</strong>, Diecast World India is an authentic, collector-first establishment based in Ghatkopar East, Mumbai. We cater to serious collectors across India with reliable dispatch and hand-picked stock.
+        </p>
+
+        <!-- Partner & Phone -->
+        <div class="contact-detail-row">
+          <div class="contact-icon"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+          <div class="contact-text">
+            <h5>Brand Partner</h5>
+            <p>Deepa Shah</p>
+          </div>
+        </div>
+
+        <!-- Hotline Numbers -->
+        <div class="contact-detail-row">
+          <div class="contact-icon"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+          <div class="contact-text">
+            <h5>Direct Calling Lines</h5>
+            <p>
+              <a href="tel:+917666676722">+91 76666 76722</a> &nbsp;|&nbsp;
+              <a href="tel:+919022676722">+91 90226 76722</a> &nbsp;|&nbsp; 
+              <a href="tel:+919699676722">+91 96996 76722</a>
+            </p>
+          </div>
+        </div>
+
+        <!-- Email -->
+        <div class="contact-detail-row">
+          <div class="contact-icon"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+          <div class="contact-text">
+            <h5>Official Email</h5>
+            <p><a href="mailto:diecastworldindia@gmail.com">diecastworldindia@gmail.com</a></p>
+          </div>
+        </div>
+
+        <!-- Address -->
+        <div class="contact-detail-row">
+          <div class="contact-icon"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div class="contact-text">
+            <h5>Store & Hub Address</h5>
+            <p>12, 1st Floor, Jai Kisan CHS, Plot No.296, Pantnagar, Ghatkopar (East), Mumbai - 400075</p>
+          </div>
+        </div>
+
+        <div style="display:flex; gap:12px; margin-top:30px;">
+          <button class="btn-primary-gold" onclick="openDrawer('cartDrawer')">
+            <svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg> Start Shopping Online
+          </button>
+        </div>
+      </div>
+
+      <!-- Visiting Card Visual (Front & Back) -->
+      <div class="hub-card-preview-col">
+        <h4 style="color:var(--gold-primary); font-size:0.95rem; margin-bottom:16px; text-transform:uppercase; letter-spacing:0.08em; font-weight:700;">
+          Official Business Card & Instagram QR
+        </h4>
+        <div class="visiting-card-frame" onclick="openCardLightbox()" title="Click to View Full Size & Scan QR">
+          <img src="assets/images/card.jpg" alt="Diecast World India Official Visiting Card - Deepa Shah" class="visiting-card-display">
+          <div class="card-expand-overlay">
+            <div class="expand-badge">
+              <svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+              <span>Click to Expand & Scan QR</span>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top:16px; font-size:0.75rem; color:var(--text-dim); text-align:center;">
+          Tap card to view full resolution • Scan QR or search <strong>@DIECAST_WORLD_INDIA</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5-Layer Packaging Safety Shield Breakdown -->
+  <section class="packaging-section reveal-scale-up">
+    <div style="max-width: 1360px; margin: 0 auto; text-align: center;">
+      <span class="p-scale-tag" style="position: static; margin-bottom: 8px;">The Collector Standard</span>
+      <h3 style="font-size: 1.8rem; color: var(--text-main); margin-bottom: 8px;">How Your Diecast Models Are Packed</h3>
+      <p style="color: var(--text-muted); font-size: 0.9rem; max-width: 650px; margin: 0 auto;">
+        We know the heartbreak of cracked blister bubbles, bent card hangers, and cracked acrylic cases. Here is our 5-layer guarantee:
+      </p>
+
+      <div class="pack-grid">
+        <div class="pack-step-card">
+          <div class="step-num">1</div>
+          <h4>Card Protectors</h4>
+          <p>Clamshell protector casing fitted on cards to shield all 4 edges.</p>
+        </div>
+        <div class="pack-step-card">
+          <div class="step-num">2</div>
+          <h4>High-Density Bubble</h4>
+          <p>Minimum 5 wraps of heavy shock-absorbing air cushioning.</p>
+        </div>
+        <div class="pack-step-card">
+          <div class="step-num">3</div>
+          <h4>Edge Corner Guards</h4>
+          <p>Stiffened cardboard angle guards guarding carton corners.</p>
+        </div>
+        <div class="pack-step-card">
+          <div class="step-num">4</div>
+          <h4>5-Ply Hard Box</h4>
+          <p>Double-wall corrugated shipping carton resistant to drop pressure.</p>
+        </div>
+        <div class="pack-step-card">
+          <div class="step-num">5</div>
+          <h4>Fragile Security Tape</h4>
+          <p>Bright red 'Fragile Scale Model - Handle with Care' tamper seal.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Indian Tiranga Waved Aero Ribbon (Footer Top) -->
+  <div class="tiranga-wave-strip tiranga-footer">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 34" fill="none" preserveAspectRatio="none">
+  <!-- Footer Upward Arched Indian Tiranga Ribbon -->
+  <path d="M 0 24.50 L 10.00 23.33 L 20.00 22.20 L 30.00 21.14 L 40.00 20.20 L 50.00 19.40 L 60.00 18.76 L 70.00 18.29 L 80.00 18.00 L 90.00 17.90 L 100.00 17.95 L 110.00 18.16 L 120.00 18.50 L 130.00 18.94 L 140.00 19.45 L 150.00 20.02 L 160.00 20.60 L 170.00 21.19 L 180.00 21.76 L 190.00 22.30 L 200.00 22.80 L 210.00 23.26 L 220.00 23.70 L 230.00 24.11 L 240.00 24.50 L 250.00 24.89 L 260.00 25.30 L 270.00 25.74 L 280.00 26.20 L 290.00 26.70 L 300.00 27.24 L 310.00 27.81 L 320.00 28.40 L 330.00 28.98 L 340.00 29.55 L 350.00 30.06 L 360.00 30.50 L 370.00 30.84 L 380.00 31.05 L 390.00 31.10 L 400.00 31.00 L 410.00 30.71 L 420.00 30.24 L 430.00 29.60 L 440.00 28.80 L 450.00 27.86 L 460.00 26.80 L 470.00 25.67 L 480.00 24.50 L 490.00 23.33 L 500.00 22.20 L 510.00 21.14 L 520.00 20.20 L 530.00 19.40 L 540.00 18.76 L 550.00 18.29 L 560.00 18.00 L 570.00 17.90 L 580.00 17.95 L 590.00 18.16 L 600.00 18.50 L 610.00 18.94 L 620.00 19.45 L 630.00 20.02 L 640.00 20.60 L 650.00 21.19 L 660.00 21.76 L 670.00 22.30 L 680.00 22.80 L 690.00 23.26 L 700.00 23.70 L 710.00 24.11 L 720.00 24.50 L 730.00 24.89 L 740.00 25.30 L 750.00 25.74 L 760.00 26.20 L 770.00 26.70 L 780.00 27.24 L 790.00 27.81 L 800.00 28.40 L 810.00 28.98 L 820.00 29.55 L 830.00 30.06 L 840.00 30.50 L 850.00 30.84 L 860.00 31.05 L 870.00 31.10 L 880.00 31.00 L 890.00 30.71 L 900.00 30.24 L 910.00 29.60 L 920.00 28.80 L 930.00 27.86 L 940.00 26.80 L 950.00 25.67 L 960.00 24.50 L 970.00 23.33 L 980.00 22.20 L 990.00 21.14 L 1000.00 20.20 L 1010.00 19.40 L 1020.00 18.76 L 1030.00 18.29 L 1040.00 18.00 L 1050.00 17.90 L 1060.00 17.95 L 1070.00 18.16 L 1080.00 18.50 L 1090.00 18.94 L 1100.00 19.45 L 1110.00 20.02 L 1120.00 20.60 L 1130.00 21.19 L 1140.00 21.76 L 1150.00 22.30 L 1160.00 22.80 L 1170.00 23.26 L 1180.00 23.70 L 1190.00 24.11 L 1200.00 24.50 L 1210.00 24.89 L 1220.00 25.30 L 1230.00 25.74 L 1240.00 26.20 L 1250.00 26.70 L 1260.00 27.24 L 1270.00 27.81 L 1280.00 28.40 L 1290.00 28.98 L 1300.00 29.55 L 1310.00 30.06 L 1320.00 30.50 L 1330.00 30.84 L 1340.00 31.05 L 1350.00 31.10 L 1360.00 31.00 L 1370.00 30.71 L 1380.00 30.24 L 1390.00 29.60 L 1400.00 28.80 L 1410.00 27.86 L 1420.00 26.80 L 1430.00 25.67 L 1440.00 24.50 L 1440 34 L 0 34 Z" fill="#20191d"/>
+  <path d="M 0 8.00 L 10.00 6.83 L 20.00 5.70 L 30.00 4.64 L 40.00 3.70 L 50.00 2.90 L 60.00 2.26 L 70.00 1.79 L 80.00 1.50 L 90.00 1.40 L 100.00 1.45 L 110.00 1.66 L 120.00 2.00 L 130.00 2.44 L 140.00 2.95 L 150.00 3.52 L 160.00 4.10 L 170.00 4.69 L 180.00 5.26 L 190.00 5.80 L 200.00 6.30 L 210.00 6.76 L 220.00 7.20 L 230.00 7.61 L 240.00 8.00 L 250.00 8.39 L 260.00 8.80 L 270.00 9.24 L 280.00 9.70 L 290.00 10.20 L 300.00 10.74 L 310.00 11.31 L 320.00 11.90 L 330.00 12.48 L 340.00 13.05 L 350.00 13.56 L 360.00 14.00 L 370.00 14.34 L 380.00 14.55 L 390.00 14.60 L 400.00 14.50 L 410.00 14.21 L 420.00 13.74 L 430.00 13.10 L 440.00 12.30 L 450.00 11.36 L 460.00 10.30 L 470.00 9.17 L 480.00 8.00 L 490.00 6.83 L 500.00 5.70 L 510.00 4.64 L 520.00 3.70 L 530.00 2.90 L 540.00 2.26 L 550.00 1.79 L 560.00 1.50 L 570.00 1.40 L 580.00 1.45 L 590.00 1.66 L 600.00 2.00 L 610.00 2.44 L 620.00 2.95 L 630.00 3.52 L 640.00 4.10 L 650.00 4.69 L 660.00 5.26 L 670.00 5.80 L 680.00 6.30 L 690.00 6.76 L 700.00 7.20 L 710.00 7.61 L 720.00 8.00 L 730.00 8.39 L 740.00 8.80 L 750.00 9.24 L 760.00 9.70 L 770.00 10.20 L 780.00 10.74 L 790.00 11.31 L 800.00 11.90 L 810.00 12.48 L 820.00 13.05 L 830.00 13.56 L 840.00 14.00 L 850.00 14.34 L 860.00 14.55 L 870.00 14.60 L 880.00 14.50 L 890.00 14.21 L 900.00 13.74 L 910.00 13.10 L 920.00 12.30 L 930.00 11.36 L 940.00 10.30 L 950.00 9.17 L 960.00 8.00 L 970.00 6.83 L 980.00 5.70 L 990.00 4.64 L 1000.00 3.70 L 1010.00 2.90 L 1020.00 2.26 L 1030.00 1.79 L 1040.00 1.50 L 1050.00 1.40 L 1060.00 1.45 L 1070.00 1.66 L 1080.00 2.00 L 1090.00 2.44 L 1100.00 2.95 L 1110.00 3.52 L 1120.00 4.10 L 1130.00 4.69 L 1140.00 5.26 L 1150.00 5.80 L 1160.00 6.30 L 1170.00 6.76 L 1180.00 7.20 L 1190.00 7.61 L 1200.00 8.00 L 1210.00 8.39 L 1220.00 8.80 L 1230.00 9.24 L 1240.00 9.70 L 1250.00 10.20 L 1260.00 10.74 L 1270.00 11.31 L 1280.00 11.90 L 1290.00 12.48 L 1300.00 13.05 L 1310.00 13.56 L 1320.00 14.00 L 1330.00 14.34 L 1340.00 14.55 L 1350.00 14.60 L 1360.00 14.50 L 1370.00 14.21 L 1380.00 13.74 L 1390.00 13.10 L 1400.00 12.30 L 1410.00 11.36 L 1420.00 10.30 L 1430.00 9.17 L 1440.00 8.00 L 1440 13.50 L 1430.00 14.67 L 1420.00 15.80 L 1410.00 16.86 L 1400.00 17.80 L 1390.00 18.60 L 1380.00 19.24 L 1370.00 19.71 L 1360.00 20.00 L 1350.00 20.10 L 1340.00 20.05 L 1330.00 19.84 L 1320.00 19.50 L 1310.00 19.06 L 1300.00 18.55 L 1290.00 17.98 L 1280.00 17.40 L 1270.00 16.81 L 1260.00 16.24 L 1250.00 15.70 L 1240.00 15.20 L 1230.00 14.74 L 1220.00 14.30 L 1210.00 13.89 L 1200.00 13.50 L 1190.00 13.11 L 1180.00 12.70 L 1170.00 12.26 L 1160.00 11.80 L 1150.00 11.30 L 1140.00 10.76 L 1130.00 10.19 L 1120.00 9.60 L 1110.00 9.02 L 1100.00 8.45 L 1090.00 7.94 L 1080.00 7.50 L 1070.00 7.16 L 1060.00 6.95 L 1050.00 6.90 L 1040.00 7.00 L 1030.00 7.29 L 1020.00 7.76 L 1010.00 8.40 L 1000.00 9.20 L 990.00 10.14 L 980.00 11.20 L 970.00 12.33 L 960.00 13.50 L 950.00 14.67 L 940.00 15.80 L 930.00 16.86 L 920.00 17.80 L 910.00 18.60 L 900.00 19.24 L 890.00 19.71 L 880.00 20.00 L 870.00 20.10 L 860.00 20.05 L 850.00 19.84 L 840.00 19.50 L 830.00 19.06 L 820.00 18.55 L 810.00 17.98 L 800.00 17.40 L 790.00 16.81 L 780.00 16.24 L 770.00 15.70 L 760.00 15.20 L 750.00 14.74 L 740.00 14.30 L 730.00 13.89 L 720.00 13.50 L 710.00 13.11 L 700.00 12.70 L 690.00 12.26 L 680.00 11.80 L 670.00 11.30 L 660.00 10.76 L 650.00 10.19 L 640.00 9.60 L 630.00 9.02 L 620.00 8.45 L 610.00 7.94 L 600.00 7.50 L 590.00 7.16 L 580.00 6.95 L 570.00 6.90 L 560.00 7.00 L 550.00 7.29 L 540.00 7.76 L 530.00 8.40 L 520.00 9.20 L 510.00 10.14 L 500.00 11.20 L 490.00 12.33 L 480.00 13.50 L 470.00 14.67 L 460.00 15.80 L 450.00 16.86 L 440.00 17.80 L 430.00 18.60 L 420.00 19.24 L 410.00 19.71 L 400.00 20.00 L 390.00 20.10 L 380.00 20.05 L 370.00 19.84 L 360.00 19.50 L 350.00 19.06 L 340.00 18.55 L 330.00 17.98 L 320.00 17.40 L 310.00 16.81 L 300.00 16.24 L 290.00 15.70 L 280.00 15.20 L 270.00 14.74 L 260.00 14.30 L 250.00 13.89 L 240.00 13.50 L 230.00 13.11 L 220.00 12.70 L 210.00 12.26 L 200.00 11.80 L 190.00 11.30 L 180.00 10.76 L 170.00 10.19 L 160.00 9.60 L 150.00 9.02 L 140.00 8.45 L 130.00 7.94 L 120.00 7.50 L 110.00 7.16 L 100.00 6.95 L 90.00 6.90 L 80.00 7.00 L 70.00 7.29 L 60.00 7.76 L 50.00 8.40 L 40.00 9.20 L 30.00 10.14 L 20.00 11.20 L 10.00 12.33 L 0.00 13.50 Z" fill="#FF671F"/>
+  <path d="M 0 13.50 L 10.00 12.33 L 20.00 11.20 L 30.00 10.14 L 40.00 9.20 L 50.00 8.40 L 60.00 7.76 L 70.00 7.29 L 80.00 7.00 L 90.00 6.90 L 100.00 6.95 L 110.00 7.16 L 120.00 7.50 L 130.00 7.94 L 140.00 8.45 L 150.00 9.02 L 160.00 9.60 L 170.00 10.19 L 180.00 10.76 L 190.00 11.30 L 200.00 11.80 L 210.00 12.26 L 220.00 12.70 L 230.00 13.11 L 240.00 13.50 L 250.00 13.89 L 260.00 14.30 L 270.00 14.74 L 280.00 15.20 L 290.00 15.70 L 300.00 16.24 L 310.00 16.81 L 320.00 17.40 L 330.00 17.98 L 340.00 18.55 L 350.00 19.06 L 360.00 19.50 L 370.00 19.84 L 380.00 20.05 L 390.00 20.10 L 400.00 20.00 L 410.00 19.71 L 420.00 19.24 L 430.00 18.60 L 440.00 17.80 L 450.00 16.86 L 460.00 15.80 L 470.00 14.67 L 480.00 13.50 L 490.00 12.33 L 500.00 11.20 L 510.00 10.14 L 520.00 9.20 L 530.00 8.40 L 540.00 7.76 L 550.00 7.29 L 560.00 7.00 L 570.00 6.90 L 580.00 6.95 L 590.00 7.16 L 600.00 7.50 L 610.00 7.94 L 620.00 8.45 L 630.00 9.02 L 640.00 9.60 L 650.00 10.19 L 660.00 10.76 L 670.00 11.30 L 680.00 11.80 L 690.00 12.26 L 700.00 12.70 L 710.00 13.11 L 720.00 13.50 L 730.00 13.89 L 740.00 14.30 L 750.00 14.74 L 760.00 15.20 L 770.00 15.70 L 780.00 16.24 L 790.00 16.81 L 800.00 17.40 L 810.00 17.98 L 820.00 18.55 L 830.00 19.06 L 840.00 19.50 L 850.00 19.84 L 860.00 20.05 L 870.00 20.10 L 880.00 20.00 L 890.00 19.71 L 900.00 19.24 L 910.00 18.60 L 920.00 17.80 L 930.00 16.86 L 940.00 15.80 L 950.00 14.67 L 960.00 13.50 L 970.00 12.33 L 980.00 11.20 L 990.00 10.14 L 1000.00 9.20 L 1010.00 8.40 L 1020.00 7.76 L 1030.00 7.29 L 1040.00 7.00 L 1050.00 6.90 L 1060.00 6.95 L 1070.00 7.16 L 1080.00 7.50 L 1090.00 7.94 L 1100.00 8.45 L 1110.00 9.02 L 1120.00 9.60 L 1130.00 10.19 L 1140.00 10.76 L 1150.00 11.30 L 1160.00 11.80 L 1170.00 12.26 L 1180.00 12.70 L 1190.00 13.11 L 1200.00 13.50 L 1210.00 13.89 L 1220.00 14.30 L 1230.00 14.74 L 1240.00 15.20 L 1250.00 15.70 L 1260.00 16.24 L 1270.00 16.81 L 1280.00 17.40 L 1290.00 17.98 L 1300.00 18.55 L 1310.00 19.06 L 1320.00 19.50 L 1330.00 19.84 L 1340.00 20.05 L 1350.00 20.10 L 1360.00 20.00 L 1370.00 19.71 L 1380.00 19.24 L 1390.00 18.60 L 1400.00 17.80 L 1410.00 16.86 L 1420.00 15.80 L 1430.00 14.67 L 1440.00 13.50 L 1440 19.00 L 1430.00 20.17 L 1420.00 21.30 L 1410.00 22.36 L 1400.00 23.30 L 1390.00 24.10 L 1380.00 24.74 L 1370.00 25.21 L 1360.00 25.50 L 1350.00 25.60 L 1340.00 25.55 L 1330.00 25.34 L 1320.00 25.00 L 1310.00 24.56 L 1300.00 24.05 L 1290.00 23.48 L 1280.00 22.90 L 1270.00 22.31 L 1260.00 21.74 L 1250.00 21.20 L 1240.00 20.70 L 1230.00 20.24 L 1220.00 19.80 L 1210.00 19.39 L 1200.00 19.00 L 1190.00 18.61 L 1180.00 18.20 L 1170.00 17.76 L 1160.00 17.30 L 1150.00 16.80 L 1140.00 16.26 L 1130.00 15.69 L 1120.00 15.10 L 1110.00 14.52 L 1100.00 13.95 L 1090.00 13.44 L 1080.00 13.00 L 1070.00 12.66 L 1060.00 12.45 L 1050.00 12.40 L 1040.00 12.50 L 1030.00 12.79 L 1020.00 13.26 L 1010.00 13.90 L 1000.00 14.70 L 990.00 15.64 L 980.00 16.70 L 970.00 17.83 L 960.00 19.00 L 950.00 20.17 L 940.00 21.30 L 930.00 22.36 L 920.00 23.30 L 910.00 24.10 L 900.00 24.74 L 890.00 25.21 L 880.00 25.50 L 870.00 25.60 L 860.00 25.55 L 850.00 25.34 L 840.00 25.00 L 830.00 24.56 L 820.00 24.05 L 810.00 23.48 L 800.00 22.90 L 790.00 22.31 L 780.00 21.74 L 770.00 21.20 L 760.00 20.70 L 750.00 20.24 L 740.00 19.80 L 730.00 19.39 L 720.00 19.00 L 710.00 18.61 L 700.00 18.20 L 690.00 17.76 L 680.00 17.30 L 670.00 16.80 L 660.00 16.26 L 650.00 15.69 L 640.00 15.10 L 630.00 14.52 L 620.00 13.95 L 610.00 13.44 L 600.00 13.00 L 590.00 12.66 L 580.00 12.45 L 570.00 12.40 L 560.00 12.50 L 550.00 12.79 L 540.00 13.26 L 530.00 13.90 L 520.00 14.70 L 510.00 15.64 L 500.00 16.70 L 490.00 17.83 L 480.00 19.00 L 470.00 20.17 L 460.00 21.30 L 450.00 22.36 L 440.00 23.30 L 430.00 24.10 L 420.00 24.74 L 410.00 25.21 L 400.00 25.50 L 390.00 25.60 L 380.00 25.55 L 370.00 25.34 L 360.00 25.00 L 350.00 24.56 L 340.00 24.05 L 330.00 23.48 L 320.00 22.90 L 310.00 22.31 L 300.00 21.74 L 290.00 21.20 L 280.00 20.70 L 270.00 20.24 L 260.00 19.80 L 250.00 19.39 L 240.00 19.00 L 230.00 18.61 L 220.00 18.20 L 210.00 17.76 L 200.00 17.30 L 190.00 16.80 L 180.00 16.26 L 170.00 15.69 L 160.00 15.10 L 150.00 14.52 L 140.00 13.95 L 130.00 13.44 L 120.00 13.00 L 110.00 12.66 L 100.00 12.45 L 90.00 12.40 L 80.00 12.50 L 70.00 12.79 L 60.00 13.26 L 50.00 13.90 L 40.00 14.70 L 30.00 15.64 L 20.00 16.70 L 10.00 17.83 L 0.00 19.00 Z" fill="#FFFFFF" stroke="#e2e8f0" stroke-width="0.4"/>
+  <path d="M 0 19.00 L 10.00 17.83 L 20.00 16.70 L 30.00 15.64 L 40.00 14.70 L 50.00 13.90 L 60.00 13.26 L 70.00 12.79 L 80.00 12.50 L 90.00 12.40 L 100.00 12.45 L 110.00 12.66 L 120.00 13.00 L 130.00 13.44 L 140.00 13.95 L 150.00 14.52 L 160.00 15.10 L 170.00 15.69 L 180.00 16.26 L 190.00 16.80 L 200.00 17.30 L 210.00 17.76 L 220.00 18.20 L 230.00 18.61 L 240.00 19.00 L 250.00 19.39 L 260.00 19.80 L 270.00 20.24 L 280.00 20.70 L 290.00 21.20 L 300.00 21.74 L 310.00 22.31 L 320.00 22.90 L 330.00 23.48 L 340.00 24.05 L 350.00 24.56 L 360.00 25.00 L 370.00 25.34 L 380.00 25.55 L 390.00 25.60 L 400.00 25.50 L 410.00 25.21 L 420.00 24.74 L 430.00 24.10 L 440.00 23.30 L 450.00 22.36 L 460.00 21.30 L 470.00 20.17 L 480.00 19.00 L 490.00 17.83 L 500.00 16.70 L 510.00 15.64 L 520.00 14.70 L 530.00 13.90 L 540.00 13.26 L 550.00 12.79 L 560.00 12.50 L 570.00 12.40 L 580.00 12.45 L 590.00 12.66 L 600.00 13.00 L 610.00 13.44 L 620.00 13.95 L 630.00 14.52 L 640.00 15.10 L 650.00 15.69 L 660.00 16.26 L 670.00 16.80 L 680.00 17.30 L 690.00 17.76 L 700.00 18.20 L 710.00 18.61 L 720.00 19.00 L 730.00 19.39 L 740.00 19.80 L 750.00 20.24 L 760.00 20.70 L 770.00 21.20 L 780.00 21.74 L 790.00 22.31 L 800.00 22.90 L 810.00 23.48 L 820.00 24.05 L 830.00 24.56 L 840.00 25.00 L 850.00 25.34 L 860.00 25.55 L 870.00 25.60 L 880.00 25.50 L 890.00 25.21 L 900.00 24.74 L 910.00 24.10 L 920.00 23.30 L 930.00 22.36 L 940.00 21.30 L 950.00 20.17 L 960.00 19.00 L 970.00 17.83 L 980.00 16.70 L 990.00 15.64 L 1000.00 14.70 L 1010.00 13.90 L 1020.00 13.26 L 1030.00 12.79 L 1040.00 12.50 L 1050.00 12.40 L 1060.00 12.45 L 1070.00 12.66 L 1080.00 13.00 L 1090.00 13.44 L 1100.00 13.95 L 1110.00 14.52 L 1120.00 15.10 L 1130.00 15.69 L 1140.00 16.26 L 1150.00 16.80 L 1160.00 17.30 L 1170.00 17.76 L 1180.00 18.20 L 1190.00 18.61 L 1200.00 19.00 L 1210.00 19.39 L 1220.00 19.80 L 1230.00 20.24 L 1240.00 20.70 L 1250.00 21.20 L 1260.00 21.74 L 1270.00 22.31 L 1280.00 22.90 L 1290.00 23.48 L 1300.00 24.05 L 1310.00 24.56 L 1320.00 25.00 L 1330.00 25.34 L 1340.00 25.55 L 1350.00 25.60 L 1360.00 25.50 L 1370.00 25.21 L 1380.00 24.74 L 1390.00 24.10 L 1400.00 23.30 L 1410.00 22.36 L 1420.00 21.30 L 1430.00 20.17 L 1440.00 19.00 L 1440 24.50 L 1430.00 25.67 L 1420.00 26.80 L 1410.00 27.86 L 1400.00 28.80 L 1390.00 29.60 L 1380.00 30.24 L 1370.00 30.71 L 1360.00 31.00 L 1350.00 31.10 L 1340.00 31.05 L 1330.00 30.84 L 1320.00 30.50 L 1310.00 30.06 L 1300.00 29.55 L 1290.00 28.98 L 1280.00 28.40 L 1270.00 27.81 L 1260.00 27.24 L 1250.00 26.70 L 1240.00 26.20 L 1230.00 25.74 L 1220.00 25.30 L 1210.00 24.89 L 1200.00 24.50 L 1190.00 24.11 L 1180.00 23.70 L 1170.00 23.26 L 1160.00 22.80 L 1150.00 22.30 L 1140.00 21.76 L 1130.00 21.19 L 1120.00 20.60 L 1110.00 20.02 L 1100.00 19.45 L 1090.00 18.94 L 1080.00 18.50 L 1070.00 18.16 L 1060.00 17.95 L 1050.00 17.90 L 1040.00 18.00 L 1030.00 18.29 L 1020.00 18.76 L 1010.00 19.40 L 1000.00 20.20 L 990.00 21.14 L 980.00 22.20 L 970.00 23.33 L 960.00 24.50 L 950.00 25.67 L 940.00 26.80 L 930.00 27.86 L 920.00 28.80 L 910.00 29.60 L 900.00 30.24 L 890.00 30.71 L 880.00 31.00 L 870.00 31.10 L 860.00 31.05 L 850.00 30.84 L 840.00 30.50 L 830.00 30.06 L 820.00 29.55 L 810.00 28.98 L 800.00 28.40 L 790.00 27.81 L 780.00 27.24 L 770.00 26.70 L 760.00 26.20 L 750.00 25.74 L 740.00 25.30 L 730.00 24.89 L 720.00 24.50 L 710.00 24.11 L 700.00 23.70 L 690.00 23.26 L 680.00 22.80 L 670.00 22.30 L 660.00 21.76 L 650.00 21.19 L 640.00 20.60 L 630.00 20.02 L 620.00 19.45 L 610.00 18.94 L 600.00 18.50 L 590.00 18.16 L 580.00 17.95 L 570.00 17.90 L 560.00 18.00 L 550.00 18.29 L 540.00 18.76 L 530.00 19.40 L 520.00 20.20 L 510.00 21.14 L 500.00 22.20 L 490.00 23.33 L 480.00 24.50 L 470.00 25.67 L 460.00 26.80 L 450.00 27.86 L 440.00 28.80 L 430.00 29.60 L 420.00 30.24 L 410.00 30.71 L 400.00 31.00 L 390.00 31.10 L 380.00 31.05 L 370.00 30.84 L 360.00 30.50 L 350.00 30.06 L 340.00 29.55 L 330.00 28.98 L 320.00 28.40 L 310.00 27.81 L 300.00 27.24 L 290.00 26.70 L 280.00 26.20 L 270.00 25.74 L 260.00 25.30 L 250.00 24.89 L 240.00 24.50 L 230.00 24.11 L 220.00 23.70 L 210.00 23.26 L 200.00 22.80 L 190.00 22.30 L 180.00 21.76 L 170.00 21.19 L 160.00 20.60 L 150.00 20.02 L 140.00 19.45 L 130.00 18.94 L 120.00 18.50 L 110.00 18.16 L 100.00 17.95 L 90.00 17.90 L 80.00 18.00 L 70.00 18.29 L 60.00 18.76 L 50.00 19.40 L 40.00 20.20 L 30.00 21.14 L 20.00 22.20 L 10.00 23.33 L 0.00 24.50 Z" fill="#046A38"/>
+</svg>
+  </div>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <div style="display:flex; align-items:center; gap:12px; margin-bottom:14px;">
+          <img src="assets/images/logo.png" alt="Logo" style="height:44px; width:auto; border-radius:4px;">
+          <h4 style="margin:0; font-size:1.2rem;">DIECAST WORLD INDIA</h4>
+        </div>
+        <p style="font-size:0.86rem; color:#94a3b8; line-height:1.6; margin-bottom:16px;">
+          India's dedicated collector destination for premium 1:64, 1:43, and 1:18 scale diecast models. Featuring authorized Mini GT, Kaido House, Pop Race, Inno64, and RLC collectibles.
+        </p>
+        <p style="font-size:0.8rem; color:var(--gold-light);">
+          <svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> 12, 1st Floor, Jai Kisan CHS, Plot No.296, Pantnagar, Ghatkopar (E), Mumbai - 400075
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Collector Scales</h4>
+        <ul>
+          <li><a href="#catalogSection">1:64 Precision Scale</a></li>
+          <li><a href="#catalogSection">1:43 Supercar Series</a></li>
+          <li><a href="#catalogSection">1:18 Centerpiece Models</a></li>
+          <li><a href="#catalogSection">LED Garage Dioramas</a></li>
+          <li><a href="#catalogSection">Blister Card Protectors</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Collector Services</h4>
+        <ul>
+          <li><a href="javascript:void(0)" onclick="openDrawer('garageDrawer')">The Collector Garage (Hold)</a></li>
+          <li><a href="#preorderSection">Upcoming Pre-Order Drops</a></li>
+          <li><a href="javascript:void(0)" onclick="openQuickView('DWI-001')">5-Layer Packaging Guarantee</a></li>
+          <li><a href="#catalogSection">Explore All Drops</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Direct Contact</h4>
+        <p style="font-size:0.88rem; margin-bottom:8px; color:#cbd5e1;">
+          <strong>Partner:</strong> Deepa Shah
+        </p>
+        <p style="font-size:0.88rem; margin-bottom:8px; color:#cbd5e1;">
+          <strong>Phone:</strong> <a href="tel:+917666676722" style="color:var(--gold-light);">7666676722</a> / <a href="tel:+919022676722" style="color:var(--gold-light);">9022676722</a> / <a href="tel:+919699676722" style="color:var(--gold-light);">9699676722</a>
+        </p>
+        <p style="font-size:0.88rem; margin-bottom:14px; color:#cbd5e1;">
+          <strong>Email:</strong> diecastworldindia@gmail.com
+        </p>
+        <a href="https://www.instagram.com/diecast_world_india?fqnt=aHRmdTl0azZ4NzJl" target="_blank" class="insta-handle-badge" style="padding:6px 14px; font-size:0.8rem;">
+          <svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg> Instagram: @diecast_world_india
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div>
+        © 2026 Diecast World India. All rights reserved. Designed for Indian Collectors.
+        <span class="footer-dev-credit">
+          • Developed by <a href="https://smartechsolutions.in/" target="_blank" rel="noopener noreferrer">Smartech Solutions</a>
+        </span>
+      </div>
+      <div style="display:flex; gap:16px;">
+        <span><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg> Authentic Licensed Products</span>
+        <span><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg> Pan-India Insured Dispatch</span>
+        <span><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg> Zero Scalping Pledge</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Slide-Over Drawer: Shopping Cart -->
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <aside class="drawer-pane" id="cartDrawer">
+    <div class="drawer-header">
+      <h3><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg> Your Collector Cart</h3>
+      <button class="close-drawer-btn" onclick="closeDrawer('cartDrawer')"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+    </div>
+    
+    <div class="drawer-body" id="cartDrawerItems">
+      <!-- Items dynamically injected -->
+    </div>
+
+    <div class="drawer-footer">
+
+      <div class="cart-summary-line">
+        <span>Packaging & Delivery (Free > ₹999)</span>
+        <span>₹99 / Free</span>
+      </div>
+
+      <div class="cart-summary-line total-line">
+        <span>Total Payable:</span>
+        <span id="cartGrandTotal">₹0</span>
+      </div>
+
+      <div style="display:flex; flex-direction:column; gap:8px; margin-top:16px;">
+        <button class="btn-primary-gold" onclick="initiateStandardCheckout()" style="width:100%; justify-content:center;">
+          <svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg> Proceed to Checkout
+        </button>
+        <button class="btn-secondary-outline" onclick="closeDrawer('cartDrawer')" style="justify-content:center; font-size:0.85rem; padding:10px 0; border:1px solid var(--border-color); color:var(--text-main); background:var(--bg-card);">
+          Continue Shopping
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Slide-Over Drawer: Collector Garage Bag (Hold System) -->
+  <aside class="drawer-pane" id="garageDrawer">
+    <div class="drawer-header">
+      <h3><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg> My Collector Garage Hold</h3>
+      <button class="close-drawer-btn" onclick="closeDrawer('garageDrawer')"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+    </div>
+
+    <div class="drawer-body">
+      <div style="background: rgba(16, 185, 129, 0.1); border: 1px solid rgba(16, 185, 129, 0.3); border-radius: 8px; padding: 12px; margin-bottom: 16px; font-size: 0.8rem; color: #065f46;">
+        <strong>How Garage Hold Works:</strong> Lock any drop today and choose hold. We keep it safe for up to 45 days in our Mumbai hub. Combine with other drops to save courier fees!
+      </div>
+
+      <div id="garageDrawerItems">
+        <!-- Garage items injected by app.js -->
+      </div>
+    </div>
+
+    <div class="drawer-footer">
+      <div class="cart-summary-line">
+        <span>Total Items on Hold:</span>
+        <span id="garageTotalHoldCount">0</span>
+      </div>
+      <div class="cart-summary-line total-line">
+        <span>Held Value:</span>
+        <span id="garageTotalHoldVal">₹0</span>
+      </div>
+      <div style="margin-top:16px;">
+        <button class="btn-primary-gold" onclick="requestGarageDispatch()" style="width:100%; justify-content:center;">
+          <svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg> Request Combined Dispatch
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Modal: Quick View -->
+  <div class="modal-overlay" id="quickViewModal">
+    <div class="modal-box">
+      <button class="modal-close-btn" onclick="closeModal('quickViewModal')"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+      <div id="quickViewContent">
+        <!-- Injected dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Checkout & Payment Flow (UPI, QR & Mandatory Screenshot Verification) -->
+  <div class="modal-overlay" id="checkoutModal">
+    <div class="modal-box" style="max-width: 540px; max-height: 90vh; overflow-y: auto;">
+      <button class="modal-close-btn" onclick="closeModal('checkoutModal')"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+      
+      <div style="padding: 24px 28px;">
+        
+        <!-- STEP 1: SHIPPING & CONTACT DETAILS -->
+        <div id="checkoutStepDetails">
+          <div style="text-align: center; margin-bottom: 20px;">
+            <div class="empty-state-icon" style="margin-bottom:8px;">
+              <svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+            </div>
+            <h3 style="font-size: 1.35rem; color:var(--text-main);">Collector Order Checkout</h3>
+            <p style="color: var(--text-muted); font-size: 0.84rem;">
+              Step 1 of 2: Enter your delivery details for 5-Layer Mint Packaging Armor.
+            </p>
+          </div>
+
+          <form onsubmit="event.preventDefault(); goToPaymentStep();">
+            <div style="margin-bottom: 12px;">
+              <label style="display:block; font-size:0.8rem; color:var(--text-muted); margin-bottom:4px; font-weight:600;">Full Name *</label>
+              <input type="text" id="custName" required placeholder="e.g. Rahul Sharma" style="width:100%; background:var(--bg-input); border:1px solid var(--border-color); color:var(--text-main); padding:10px 14px; border-radius:6px; font-size:0.9rem;">
+            </div>
+
+            <div style="margin-bottom: 12px;">
+              <label style="display:block; font-size:0.8rem; color:var(--text-muted); margin-bottom:4px; font-weight:600;">Mobile Number (For Dispatch & WhatsApp Verification) *</label>
+              <input type="tel" id="custPhone" required placeholder="e.g. 9820012345" style="width:100%; background:var(--bg-input); border:1px solid var(--border-color); color:var(--text-main); padding:10px 14px; border-radius:6px; font-size:0.9rem;">
+            </div>
+
+            <div style="margin-bottom: 12px;">
+              <label style="display:block; font-size:0.8rem; color:var(--text-muted); margin-bottom:4px; font-weight:600;">Shipping Address *</label>
+              <textarea id="custAddress" required rows="2" placeholder="Flat/House No, Building, Street, Landmark" style="width:100%; background:var(--bg-input); border:1px solid var(--border-color); color:var(--text-main); padding:10px 14px; border-radius:6px; font-size:0.9rem;"></textarea>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 14px;">
+              <div>
+                <label style="display:block; font-size:0.8rem; color:var(--text-muted); margin-bottom:4px; font-weight:600;">City *</label>
+                <input type="text" id="custCity" required placeholder="e.g. Mumbai / Bangalore" style="width:100%; background:var(--bg-input); border:1px solid var(--border-color); color:var(--text-main); padding:10px 14px; border-radius:6px; font-size:0.9rem;">
+              </div>
+              <div>
+                <label style="display:block; font-size:0.8rem; color:var(--text-muted); margin-bottom:4px; font-weight:600;">Pincode *</label>
+                <input type="text" id="custPincode" required placeholder="e.g. 400075" style="width:100%; background:var(--bg-input); border:1px solid var(--border-color); color:var(--text-main); padding:10px 14px; border-radius:6px; font-size:0.9rem;">
+              </div>
+            </div>
+
+            <!-- Fulfillment Preference -->
+            <div style="background: var(--bg-subtle); border: 1px solid var(--border-color); border-radius: 8px; padding: 12px; margin-bottom: 18px;">
+              <label style="font-size:0.8rem; color:var(--gold-primary); font-weight:700; display:block; margin-bottom:8px;">Fulfillment Preference:</label>
+              <div style="display: flex; gap: 16px; font-size: 0.82rem; color: var(--text-main);">
+                <label style="display:flex; align-items:center; gap:6px; cursor:pointer;">
+                  <input type="radio" name="deliveryMode" value="standard" checked> <svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg> Dispatch to My Door
+                </label>
+                <label style="display:flex; align-items:center; gap:6px; cursor:pointer;">
+                  <input type="radio" name="deliveryMode" value="hold"> <svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg> Hold in Collector Garage
+                </label>
+              </div>
+            </div>
+
+            <button type="submit" class="btn-primary-gold" style="width: 100%; justify-content: center; font-size: 1rem;">
+              Proceed to Payment →
+            </button>
+          </form>
+        </div>
+
+        <!-- STEP 2: PAYMENT (UPI APP OR QR CODE) & MANDATORY SCREENSHOT UPLOAD -->
+        <div id="checkoutStepPayment" style="display: none;">
+          <button type="button" class="back-step-btn" onclick="backToShippingDetails()">
+            ← Back to Delivery Details
+          </button>
+
+          <h3 style="font-size: 1.3rem; color:var(--text-main); margin-bottom: 4px;">Complete UPI Payment</h3>
+          <p style="color: var(--text-muted); font-size: 0.82rem; margin-bottom: 14px;">
+            Step 2 of 2: Pay via UPI or Scan QR, then upload screenshot for admin verification.
+          </p>
+
+          <!-- Amount Banner -->
+          <div class="payment-amount-banner">
+            <div>
+              <span style="font-size: 0.76rem; color: var(--text-dim); display:block; text-transform:uppercase; font-weight:600;">Total Payable:</span>
+              <span id="checkoutAmountDisplay" style="font-size: 1.45rem; font-weight: 800; color: var(--crimson-primary);">₹0</span>
+            </div>
+            <div style="text-align: right;">
+              <span style="font-size: 0.74rem; color: var(--text-dim); display:block;">Fulfillment:</span>
+              <span id="checkoutModeDisplay" style="font-size: 0.82rem; font-weight: 700; color: var(--gold-primary);">Doorstep Dispatch</span>
+            </div>
+          </div>
+
+          <!-- Two Options: Pay by UPI App OR Pay by QR -->
+          <div class="payment-tabs-nav">
+            <button type="button" class="pay-tab-btn active" id="tabBtnUpi" onclick="switchPayTab('upi')">
+              <svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+              Pay via UPI App
+            </button>
+            <button type="button" class="pay-tab-btn" id="tabBtnQr" onclick="switchPayTab('qr')">
+              <svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+              Pay via QR Code
+            </button>
+          </div>
+
+          <!-- OPTION 1: UPI APPS LIST -->
+          <div id="viewPayUpi">
+            <div class="upi-apps-list">
+              <a href="#" class="upi-app-item" onclick="triggerUpiIntent('Google Pay', event)">
+                <div class="upi-app-icon gpay-icon">G</div>
+                <div class="upi-app-meta">
+                  <strong>Google Pay</strong>
+                  <span>Tap to open Google Pay UPI</span>
+                </div>
+                <span class="upi-pay-pill">Pay Now</span>
+              </a>
+
+              <a href="#" class="upi-app-item" onclick="triggerUpiIntent('PhonePe', event)">
+                <div class="upi-app-icon phonepe-icon">Pe</div>
+                <div class="upi-app-meta">
+                  <strong>PhonePe</strong>
+                  <span>Tap to open PhonePe UPI</span>
+                </div>
+                <span class="upi-pay-pill">Pay Now</span>
+              </a>
+
+              <a href="#" class="upi-app-item" onclick="triggerUpiIntent('Paytm', event)">
+                <div class="upi-app-icon paytm-icon">P</div>
+                <div class="upi-app-meta">
+                  <strong>Paytm UPI</strong>
+                  <span>Tap to open Paytm UPI</span>
+                </div>
+                <span class="upi-pay-pill">Pay Now</span>
+              </a>
+
+              <a href="#" class="upi-app-item" onclick="triggerUpiIntent('BHIM / Other UPI', event)">
+                <div class="upi-app-icon bhim-icon">B</div>
+                <div class="upi-app-meta">
+                  <strong>BHIM / Any Other UPI App</strong>
+                  <span>CRED, Amazon Pay, Any Bank App</span>
+                </div>
+                <span class="upi-pay-pill">Pay Now</span>
+              </a>
+            </div>
+
+            <!-- Copy UPI ID -->
+            <div class="upi-id-box">
+              <div>
+                <span style="font-size:0.72rem; color:var(--text-dim); text-transform:uppercase; font-weight:700; display:block;">Verified Store UPI ID:</span>
+                <span style="font-family:monospace; font-size:0.92rem; font-weight:800; color:var(--text-main);" id="storeUpiIdDisplay">9022676722@okaxis</span>
+                <span style="font-size:0.72rem; color:#059669; display:block;">Verified: Deepa Shah (Diecast World India)</span>
+              </div>
+              <button type="button" class="btn-copy-upi" onclick="copyUpiId()">
+                <svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                Copy ID
+              </button>
+            </div>
+          </div>
+
+          <!-- OPTION 2: QR CODE -->
+          <div id="viewPayQr" style="display: none;">
+            <div class="qr-payment-card">
+              <div class="qr-card-header">
+                <img src="assets/images/logo.png" alt="Logo" class="qr-logo-small">
+                <div>
+                  <strong>Diecast World India</strong>
+                  <span style="font-size:0.74rem; color:var(--text-muted); display:block;">Partner: Deepa Shah • Mumbai Hub</span>
+                </div>
+              </div>
+
+              <div class="qr-code-wrapper">
+                <svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="180" height="180" fill="white"/>
+  <!-- Top Left Finder Eye -->
+  <rect x="10" y="10" width="46" height="46" rx="4" fill="#0f172a"/>
+  <rect x="16" y="16" width="34" height="34" rx="2" fill="white"/>
+  <rect x="22" y="22" width="22" height="22" rx="2" fill="#0f172a"/>
+
+  <!-- Top Right Finder Eye -->
+  <rect x="124" y="10" width="46" height="46" rx="4" fill="#0f172a"/>
+  <rect x="130" y="16" width="34" height="34" rx="2" fill="white"/>
+  <rect x="136" y="22" width="22" height="22" rx="2" fill="#0f172a"/>
+
+  <!-- Bottom Left Finder Eye -->
+  <rect x="10" y="124" width="46" height="46" rx="4" fill="#0f172a"/>
+  <rect x="16" y="130" width="34" height="34" rx="2" fill="white"/>
+  <rect x="22" y="136" width="22" height="22" rx="2" fill="#0f172a"/>
+
+  <!-- Matrix Data Modules -->
+  <g fill="#0f172a">
+    <rect x="64" y="14" width="8" height="8" rx="1"/>
+    <rect x="76" y="14" width="8" height="8" rx="1"/>
+    <rect x="96" y="14" width="8" height="8" rx="1"/>
+    <rect x="108" y="14" width="8" height="8" rx="1"/>
+
+    <rect x="64" y="26" width="8" height="8" rx="1"/>
+    <rect x="88" y="26" width="8" height="8" rx="1"/>
+    <rect x="108" y="26" width="8" height="8" rx="1"/>
+
+    <rect x="76" y="38" width="8" height="8" rx="1"/>
+    <rect x="96" y="38" width="8" height="8" rx="1"/>
+
+    <rect x="14" y="64" width="8" height="8" rx="1"/>
+    <rect x="26" y="64" width="8" height="8" rx="1"/>
+    <rect x="38" y="64" width="8" height="8" rx="1"/>
+    <rect x="50" y="64" width="8" height="8" rx="1"/>
+    <rect x="64" y="64" width="8" height="8" rx="1"/>
+    <rect x="76" y="64" width="8" height="8" rx="1"/>
+    <rect x="96" y="64" width="8" height="8" rx="1"/>
+    <rect x="108" y="64" width="8" height="8" rx="1"/>
+    <rect x="124" y="64" width="8" height="8" rx="1"/>
+    <rect x="144" y="64" width="8" height="8" rx="1"/>
+    <rect x="158" y="64" width="8" height="8" rx="1"/>
+
+    <rect x="26" y="76" width="8" height="8" rx="1"/>
+    <rect x="46" y="76" width="8" height="8" rx="1"/>
+    <rect x="64" y="76" width="8" height="8" rx="1"/>
+    <rect x="124" y="76" width="8" height="8" rx="1"/>
+    <rect x="148" y="76" width="8" height="8" rx="1"/>
+
+    <rect x="14" y="88" width="8" height="8" rx="1"/>
+    <rect x="38" y="88" width="8" height="8" rx="1"/>
+    <rect x="136" y="88" width="8" height="8" rx="1"/>
+    <rect x="158" y="88" width="8" height="8" rx="1"/>
+
+    <rect x="14" y="100" width="8" height="8" rx="1"/>
+    <rect x="38" y="100" width="8" height="8" rx="1"/>
+    <rect x="54" y="100" width="8" height="8" rx="1"/>
+    <rect x="124" y="100" width="8" height="8" rx="1"/>
+    <rect x="144" y="100" width="8" height="8" rx="1"/>
+
+    <rect x="64" y="124" width="8" height="8" rx="1"/>
+    <rect x="76" y="124" width="8" height="8" rx="1"/>
+    <rect x="96" y="124" width="8" height="8" rx="1"/>
+    <rect x="116" y="124" width="8" height="8" rx="1"/>
+    <rect x="136" y="124" width="8" height="8" rx="1"/>
+    <rect x="158" y="124" width="8" height="8" rx="1"/>
+
+    <rect x="76" y="136" width="8" height="8" rx="1"/>
+    <rect x="96" y="136" width="8" height="8" rx="1"/>
+    <rect x="124" y="136" width="8" height="8" rx="1"/>
+    <rect x="144" y="136" width="8" height="8" rx="1"/>
+
+    <rect x="64" y="148" width="8" height="8" rx="1"/>
+    <rect x="88" y="148" width="8" height="8" rx="1"/>
+    <rect x="108" y="148" width="8" height="8" rx="1"/>
+    <rect x="136" y="148" width="8" height="8" rx="1"/>
+    <rect x="158" y="148" width="8" height="8" rx="1"/>
+
+    <rect x="64" y="160" width="8" height="8" rx="1"/>
+    <rect x="76" y="160" width="8" height="8" rx="1"/>
+    <rect x="96" y="160" width="8" height="8" rx="1"/>
+    <rect x="124" y="160" width="8" height="8" rx="1"/>
+    <rect x="144" y="160" width="8" height="8" rx="1"/>
+  </g>
+
+  <!-- Center Diecast World India Logo Badge -->
+  <rect x="70" y="70" width="40" height="40" rx="8" fill="#ffffff" stroke="#d97706" stroke-width="2"/>
+  <rect x="74" y="74" width="32" height="32" rx="6" fill="#0f172a"/>
+  <text x="90" y="94" font-family="Space Grotesk, sans-serif" font-size="11" font-weight="800" fill="#f59e0b" text-anchor="middle">DWI</text>
+</svg>
+              </div>
+
+              <div class="qr-card-footer">
+                <div class="qr-scan-badge">Scan & Pay with Any UPI App</div>
+                <div style="font-size:0.78rem; color:#334155; margin-top:6px; font-weight:600;">
+                  UPI ID: <strong>9022676722@okaxis</strong>
+                </div>
+                <span style="font-size:0.7rem; color:var(--gold-primary); display:block; margin-top:3px;">
+                  (Official Store QR Code • Configurable via Admin Panel)
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- MANDATORY PAYMENT SCREENSHOT UPLOAD -->
+          <div class="screenshot-upload-zone" id="screenshotDropzone">
+            <input type="file" id="paymentScreenshotInput" accept="image/*" style="display:none;" onchange="handleScreenshotSelected(event)">
+            
+            <label for="paymentScreenshotInput" class="upload-dropzone-label" id="dropzoneLabel">
+              <div class="upload-icon-circle">
+                <svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+              </div>
+              <span class="upload-main-text" id="uploadStatusText">Upload Payment Screenshot *</span>
+              <span class="upload-sub-text">Tap to select screenshot from gallery (JPG, PNG, WebP)</span>
+              <span class="upload-badge-mandatory">Mandatory — Required to Place Order</span>
+            </label>
+
+            <!-- Preview box when file selected -->
+            <div id="screenshotPreviewContainer" style="display:none;" class="screenshot-preview-card">
+              <img id="screenshotPreviewImg" src="" alt="Payment Screenshot Preview">
+              <div class="preview-meta">
+                <div class="preview-filename" id="previewFileName">screenshot.jpg</div>
+                <div class="preview-status">Screenshot Attached for Admin Review</div>
+                <button type="button" class="btn-change-ss" onclick="document.getElementById('paymentScreenshotInput').click()">Change Screenshot</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Optional UTR / Reference -->
+          <div style="margin-top: 12px; margin-bottom: 12px;">
+            <input type="text" id="paymentUtrNumber" placeholder="UPI Ref / UTR Number (Optional, 12 Digits)" style="width:100%; background:var(--bg-input); border:1px solid var(--border-color); color:var(--text-main); padding:9px 12px; border-radius:6px; font-size:0.84rem;">
+          </div>
+
+          <!-- Admin Verification Notice -->
+          <div class="admin-verify-notice">
+            <svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            <span><strong>Admin Verification:</strong> Your uploaded payment screenshot will be verified by partner Deepa Shah before order dispatch.</span>
+          </div>
+
+          <!-- Submit Order Button -->
+          <button type="button" class="btn-primary-gold" onclick="submitOrderWithPaymentProof()" style="width: 100%; justify-content: center; font-size: 1rem; margin-top: 16px;">
+            <svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Confirm Order & Submit Proof
+          </button>
+        </div>
+
+        <!-- STEP 3: ORDER CONFIRMED & AWAITING VERIFICATION -->
+        <div id="checkoutStepSuccess" style="display: none; text-align: center; padding: 10px 0;">
+          <div style="width: 64px; height: 64px; border-radius: 50%; background: rgba(16, 185, 129, 0.15); color: #059669; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; font-size: 2rem;">
+            <svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+
+          <h3 style="font-size: 1.4rem; color:var(--text-main); margin-bottom: 6px;">Order Placed Successfully!</h3>
+          <span class="status-pill-pending"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:-0.15em; margin-right:4px;"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Payment Verification Pending</span>
+          
+          <div style="background: var(--bg-subtle); border: 1px solid var(--border-color); border-radius: 8px; padding: 14px; margin: 16px 0; text-align: left; font-size: 0.85rem;">
+            <div style="display:flex; justify-content:space-between; margin-bottom:6px;">
+              <span style="color:var(--text-dim);">Order Number:</span>
+              <strong id="successOrderId" style="color:var(--gold-primary);">#DWI-000000</strong>
+            </div>
+            <div style="display:flex; justify-content:space-between; margin-bottom:6px;">
+              <span style="color:var(--text-dim);">Customer:</span>
+              <strong id="successCustomerName">Rahul Sharma</strong>
+            </div>
+            <div style="display:flex; justify-content:space-between; margin-bottom:6px;">
+              <span style="color:var(--text-dim);">Mobile:</span>
+              <strong id="successCustomerPhone">98200XXXXX</strong>
+            </div>
+            <div style="display:flex; justify-content:space-between;">
+              <span style="color:var(--text-dim);">Amount:</span>
+              <strong id="successTotalAmount" style="color:var(--crimson-primary);">₹0</strong>
+            </div>
+          </div>
+
+          <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.5; margin-bottom: 20px;">
+            We have securely received your payment screenshot. Partner <strong>Deepa Shah</strong> will verify your payment and send tracking updates directly to your WhatsApp.
+          </p>
+
+          <button type="button" class="btn-primary-gold" onclick="closeCheckoutSuccess()" style="width: 100%; justify-content: center; font-size: 1rem;">
+            Continue Exploring Collectibles
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Modal: Business Card & QR High-Res Lightbox -->
+  <div class="modal-overlay" id="businessCardModal">
+    <div class="modal-box business-card-modal-box">
+      <button class="modal-close-btn" onclick="closeModal('businessCardModal')">
+        <svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+
+      <div class="card-modal-header">
+        <div class="card-modal-badge">Official Store Identity & Credential</div>
+        <h3>Diecast World India Official Visiting Card</h3>
+        <p>Partner: Deepa Shah • Direct Store Identity, Mumbai Hub Address & Instagram QR</p>
+      </div>
+
+      <div class="card-modal-body">
+        <div class="card-lightbox-img-wrap">
+          <img src="assets/images/card.jpg" alt="Diecast World India Official Visiting Card" class="card-modal-img">
+        </div>
+      </div>
+
+      <div class="card-modal-footer">
+        <div class="card-modal-quick-actions">
+          <a href="tel:+919022676722" class="btn-card-action">
+            <svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call: +91 90226 76722
+          </a>
+          <a href="https://www.instagram.com/diecast_world_india?fqnt=aHRmdTl0azZ4NzJl" target="_blank" class="btn-card-action btn-card-action-insta">
+            <svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            Open @diecast_world_india
+          </a>
+          <a href="assets/images/card.jpg" target="_blank" download="DiecastWorldIndia_VisitingCard.jpg" class="btn-card-action btn-card-action-download">
+            <svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download Card
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

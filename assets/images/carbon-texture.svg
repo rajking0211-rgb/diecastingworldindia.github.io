@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <rect width="24" height="24" fill="#090b10"/>
+  <!-- Fine diagonal twill threads -->
+  <path d="M0 0 L12 12 L12 24 L0 12 Z" fill="#0e121a"/>
+  <path d="M12 0 L24 12 L24 24 L12 12 Z" fill="#121622"/>
+  <path d="M0 12 L12 0 L12 1.5 L0 13.5 Z" fill="rgba(255,255,255,0.025)"/>
+  <path d="M12 12 L24 0 L24 1.5 L12 13.5 Z" fill="rgba(255,255,255,0.025)"/>
+  <path d="M0 24 L24 0" stroke="rgba(0,0,0,0.5)" stroke-width="0.8"/>
+  <path d="M0 0 L24 24" stroke="rgba(255,255,255,0.012)" stroke-width="0.8"/>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <rect width="24" height="24" fill="#f3f6fa"/>
+  <!-- Light titanium twill threads -->
+  <path d="M0 0 L12 12 L12 24 L0 12 Z" fill="#e9edf4"/>
+  <path d="M12 0 L24 12 L24 24 L12 12 Z" fill="#dfe4ee"/>
+  <path d="M0 12 L12 0 L12 1.5 L0 13.5 Z" fill="rgba(255,255,255,0.7)"/>
+  <path d="M12 12 L24 0 L24 1.5 L12 13.5 Z" fill="rgba(255,255,255,0.7)"/>
+  <path d="M0 24 L24 0" stroke="rgba(15,23,42,0.04)" stroke-width="0.8"/>
+  <path d="M0 0 L24 24" stroke="rgba(255,255,255,0.4)" stroke-width="0.8"/>
+</svg>

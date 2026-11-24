@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <rect width="60" height="60" fill="#ffffff"/>
+  <!-- Subtle center longitudinal tire groove -->
+  <line x1="30" y1="0" x2="30" y2="60" stroke="#e5e7eb" stroke-width="2.5"/>
+  <line x1="29" y1="0" x2="29" y2="60" stroke="#f3f4f6" stroke-width="1"/>
+  <!-- Angled tire tread sipes (directional chevron racing pattern) -->
+  <g stroke="#e2e8f0" stroke-width="1.5" stroke-linecap="round" fill="none">
+    <!-- Left sipes repeating every 15px -->
+    <path d="M6 5 L24 14"/>
+    <path d="M6 20 L24 29"/>
+    <path d="M6 35 L24 44"/>
+    <path d="M6 50 L24 59"/>
+    <!-- Right sipes mirrored -->
+    <path d="M54 5 L36 14"/>
+    <path d="M54 20 L36 29"/>
+    <path d="M54 35 L36 44"/>
+    <path d="M54 50 L36 59"/>
+  </g>
+  <!-- Micro rain grooves -->
+  <g stroke="#f1f5f9" stroke-width="1" stroke-linecap="round" fill="none">
+    <path d="M10 10 L20 15"/>
+    <path d="M10 25 L20 30"/>
+    <path d="M10 40 L20 45"/>
+    <path d="M10 55 L20 60"/>
+    <path d="M50 10 L40 15"/>
+    <path d="M50 25 L40 30"/>
+    <path d="M50 40 L40 45"/>
+    <path d="M50 55 L40 60"/>
+  </g>
+</svg>
