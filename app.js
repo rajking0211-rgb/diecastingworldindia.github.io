@@ -1295,6 +1295,16 @@ function showToast(message) {
 
 // Setup Event Listeners
 function setupEventListeners() {
+  // Close mobile search when clicking outside navbar
+  document.addEventListener("click", (e) => {
+    const navContainer = document.querySelector(".nav-container");
+    if (!navContainer || !navContainer.classList.contains("mobile-search-open")) return;
+    const navbar = document.querySelector(".navbar");
+    if (navbar && !navbar.contains(e.target)) {
+      toggleMobileSearch(false);
+    }
+  });
+
   const searchInput = document.getElementById("navSearchInput");
   if (searchInput) {
     searchInput.addEventListener("input", (e) => {
@@ -1328,6 +1338,26 @@ function setupEventListeners() {
 }
 
 // Setup Keyboard Shortcuts (e.g. '/' to focus search, Esc to clear search or close modals)
+
+// Mobile Search Bar Toggle
+function toggleMobileSearch(open) {
+  const navContainer = document.querySelector(".nav-container");
+  const searchInput = document.getElementById("navSearchInput");
+  if (!navContainer) return;
+
+  if (open) {
+    navContainer.classList.add("mobile-search-open");
+    if (searchInput) {
+      setTimeout(() => {
+        searchInput.focus();
+        searchInput.select();
+      }, 60);
+    }
+  } else {
+    navContainer.classList.remove("mobile-search-open");
+  }
+}
+
 function setupKeyboardShortcuts() {
   document.addEventListener("keydown", (e) => {
     if (e.key === "/" && document.activeElement.tagName !== "INPUT" && document.activeElement.tagName !== "TEXTAREA") {
@@ -1338,6 +1368,7 @@ function setupKeyboardShortcuts() {
         s.select();
       }
     } else if (e.key === "Escape") {
+      toggleMobileSearch(false);
       const searchInput = document.getElementById("navSearchInput");
       if (searchInput && searchInput.value.trim() !== "") {
         clearSearch();

@@ -371,6 +371,14 @@ h1, h2, h3, h4, .brand-font {
   position: relative;
 }
 
+.mobile-search-trigger {
+  display: none;
+}
+
+.search-close-btn {
+  display: none;
+}
+
 .nav-search-bar input {
   width: 100%;
   background: var(--bg-card);
@@ -484,7 +492,18 @@ h1, h2, h3, h4, .brand-font {
 }
 
 .tiranga-wave-strip.tiranga-header {
+  background: #ffffff;
   border-bottom: 1px solid rgba(226, 232, 240, 0.6);
+  line-height: 0;
+  display: block;
+  overflow: visible;
+}
+
+.tiranga-wave-strip.tiranga-header svg {
+  height: 36px;
+  width: 100%;
+  display: block;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.05));
 }
 
 .tiranga-wave-strip.tiranga-footer {
@@ -2742,10 +2761,10 @@ h1, h2, h3, h4, .brand-font {
     padding: 6px 0 8px;
   }
   .nav-container {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 8px;
-    padding-top: 4px;
-    padding-bottom: 4px;
+    padding-top: 6px;
+    padding-bottom: 6px;
   }
   .brand-badge {
     gap: 8px;
@@ -2772,15 +2791,113 @@ h1, h2, h3, h4, .brand-font {
     padding: 7px 11px;
     font-size: 0.78rem;
   }
-  .nav-search-bar {
-    order: 3;
-    width: 100%;
-    max-width: 100%;
-    margin-top: 2px;
+  /* Mobile Search: Single-row clean navigation */
+  .mobile-search-trigger {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 11px;
+    border: 1.5px solid #ea580c;
+    background: #ffffff;
+    color: #ea580c;
+    border-radius: var(--radius-full);
+    cursor: pointer;
+    transition: all var(--transition-fast);
   }
-  .nav-search-bar input {
+
+  .mobile-search-trigger svg {
+    width: 17px;
+    height: 17px;
+    stroke: #ea580c;
+  }
+
+  .mobile-search-trigger:hover,
+  .mobile-search-trigger:active {
+    background: rgba(234, 88, 12, 0.08);
+    transform: translateY(-2px);
+  }
+
+  /* Search bar is hidden by default in mobile view */
+  .nav-search-bar {
+    display: none !important;
+  }
+
+  /* When search is toggled open on mobile: hide buttons and expand search bar */
+  .nav-container.mobile-search-open .nav-actions {
+    display: none !important;
+  }
+
+  .nav-container.mobile-search-open .brand-info-box {
+    display: none;
+  }
+
+  .nav-container.mobile-search-open .nav-search-bar {
+    display: flex !important;
+    align-items: center;
+    flex: 1 !important;
+    width: auto !important;
+    max-width: 100% !important;
+    margin: 0 0 0 8px !important;
+    order: 2 !important;
+    position: relative !important;
+    animation: searchBarExpand 0.22s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+
+  .nav-container.mobile-search-open .nav-search-bar input {
+    width: 100%;
     font-size: 0.84rem;
-    padding: 9px 12px 9px 36px;
+    padding: 9px 40px 9px 34px !important;
+    border: 1.5px solid #ea580c !important;
+    border-radius: var(--radius-full) !important;
+    box-shadow: 0 0 14px rgba(234, 88, 12, 0.2) !important;
+    background: #ffffff;
+  }
+
+  .nav-container.mobile-search-open .search-icon-btn {
+    position: absolute;
+    left: 10px;
+    right: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ea580c;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-container.mobile-search-open .search-close-btn {
+    display: inline-flex !important;
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 26px;
+    height: 26px;
+    border-radius: var(--radius-full);
+    background: rgba(234, 88, 12, 0.12);
+    color: #ea580c;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+  }
+
+  .nav-container.mobile-search-open .search-close-btn:hover {
+    background: #ea580c;
+    color: #ffffff;
+  }
+
+  @keyframes searchBarExpand {
+    from {
+      opacity: 0;
+      transform: scaleX(0.92);
+      transform-origin: right center;
+    }
+    to {
+      opacity: 1;
+      transform: scaleX(1);
+    }
   }
 
   /* Store Celebration Announcement */
@@ -3386,6 +3503,17 @@ h1, h2, h3, h4, .brand-font {
   .brand-garage-sub {
     display: none;
   }
+  .nav-actions {
+    gap: 4px;
+  }
+  .nav-pill-btn {
+    padding: 6px 9px;
+    font-size: 0.74rem;
+    gap: 4px;
+  }
+  .mobile-search-trigger {
+    padding: 6px 9px !important;
+  }
 
   .showcase-viewport {
     height: 310px;
@@ -3444,6 +3572,7 @@ h1, h2, h3, h4, .brand-font {
 .nav-pill-btn,
 .cart-btn,
 .garage-nav-btn,
+.mobile-search-trigger,
 .slide-btn-cart,
 .slide-btn-hold,
 .slide-btn-quick,
