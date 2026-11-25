@@ -240,7 +240,7 @@ h1, h2, h3, h4, .brand-font {
   background: var(--navbar-bg);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border-bottom: 1px solid var(--navbar-border);
+  /* border-bottom: 1px solid var(--navbar-border); */
   box-shadow: 0 4px 20px rgba(15, 23, 42, 0.04);
   transition: var(--transition-fast);
 }
@@ -2761,10 +2761,10 @@ h1, h2, h3, h4, .brand-font {
     padding: 6px 0 8px;
   }
   .nav-container {
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     gap: 8px;
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-top: 4px;
+    padding-bottom: 4px;
   }
   .brand-badge {
     gap: 8px;
@@ -3502,17 +3502,6 @@ h1, h2, h3, h4, .brand-font {
   }
   .brand-garage-sub {
     display: none;
-  }
-  .nav-actions {
-    gap: 4px;
-  }
-  .nav-pill-btn {
-    padding: 6px 9px;
-    font-size: 0.74rem;
-    gap: 4px;
-  }
-  .mobile-search-trigger {
-    padding: 6px 9px !important;
   }
 
   .showcase-viewport {
